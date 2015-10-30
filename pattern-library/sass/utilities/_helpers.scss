@@ -60,8 +60,8 @@
 }
 
 %a11y-ensure-contrast {
-    background: palette(grayscale, black-t) !important; // a11y: Ensuring that color contrast is high for legibility
-    color: palette(grayscale, white-t) !important; // a11y: Ensuring that color contrast is high for legibility
+    background: edx-palette(grayscale, black-t) !important; // a11y: Ensuring that color contrast is high for legibility
+    color: edx-palette(grayscale, white-t) !important; // a11y: Ensuring that color contrast is high for legibility
 }
 
 // ----------------------------
@@ -127,28 +127,28 @@
     );
 
     border-bottom: 1px solid $transparent;
-    color: palette(primary, base);
+    color: edx-palette(primary, base);
     text-decoration: none;
 
     // STATE: hover, active, focus
     &:hover,
     &:active,
     &:focus {
-        border-bottom-color: palette(primary, accent);
-        color: palette(primary, accent);
+        border-bottom-color: edx-palette(primary, accent);
+        color: edx-palette(primary, accent);
     }
 
     // STATE: is disabled
     &:disabled,
     &.is-disabled {
         display: none;
-        color: palette(grayscale, light);
+        color: edx-palette(grayscale, light);
     }
 
     // STATE: is pressed or active
     &:active,
     &.is-pressed,
     &.is-active {
-        color: palette(primary, dark);
+        color: edx-palette(primary, dark);
     }
 }

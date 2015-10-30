@@ -97,8 +97,8 @@
 
     &.has-error {
         padding: spacing-vertical(x-small);
-        background: palette(error, base);
-        color: palette(grayscale, white);
+        background: edx-palette(error, base);
+        color: edx-palette(grayscale, white);
     }
 }
 
@@ -175,40 +175,40 @@
 
     // STATE: has an error
     &.has-error {
-        border-color: palette(error, base);
+        border-color: edx-palette(error, base);
 
         & + .field-hint {
-            color: palette(error, dark);
+            color: edx-palette(error, dark);
         }
 
         .icon {
-            fill: palette(error, base);
+            fill: edx-palette(error, base);
         }
     }
 
     // STATE: has a warning
     &.has-warning {
-        border-color: palette(warning, base);
+        border-color: edx-palette(warning, base);
 
         & + .field-hint {
-            color: palette(warning, dark);
+            color: edx-palette(warning, dark);
         }
 
         .icon {
-            fill: palette(warning, base);
+            fill: edx-palette(warning, base);
         }
     }
 
     // STATE: is complete or valid
     &.has-success {
-        border-color: palette(success, base);
+        border-color: edx-palette(success, base);
 
         // & + .field-hint {
-        //     color: palette(success, dark);
+        //     color: edx-palette(success, dark);
         // }
 
         .icon {
-            fill: palette(success, base);
+            fill: edx-palette(success, base);
         }
     }
 }
@@ -236,7 +236,7 @@
 
         &.has-error {
             border-width: 1px 1px 2px 1px;
-            border-color: palette(error, base);
+            border-color: edx-palette(error, base);
         }
     }
 }
@@ -357,13 +357,13 @@
 
         & + .field-input-label {
             // disabled state of normal checkboxes
-            color: palette(grayscale, base);
+            color: edx-palette(grayscale, base);
         }
 
         &.replace-checkbox {
 
             & + .field-input-label {
-                color: palette(grayscale, base);
+                color: edx-palette(grayscale, base);
 
                 &:before {
                     // disabled state of replaced checkboxes
@@ -378,7 +378,7 @@
 
             & + .field-input-label {
                 // disabled state of normal radio buttons
-                color: palette(grayscale, base);
+                color: edx-palette(grayscale, base);
 
                 &:before {
                     // disabled state of replaced checkboxes

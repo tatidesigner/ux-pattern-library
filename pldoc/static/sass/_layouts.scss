@@ -57,7 +57,7 @@
 // pattern
 .pldoc-wrapper-pattern {
     padding: spacing-vertical(small) spacing-horizontal(base);
-    border-bottom: rem(2) solid palette(grayscale, mid-dark);
+    border-bottom: rem(2) solid edx-palette(grayscale, mid-dark);
     box-shadow: inset spacing-horizontal(xx-small) 0 0 0 $transparent;
 
     &:last-child {

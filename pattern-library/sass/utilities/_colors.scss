@@ -1,0 +1,232 @@
+// ------------------------------
+// edX Pattern Library: Variables
+
+// About: Sass partial for defining variables used throughout the applications.
+
+// PALETTE MANAGEMENT
+// COLOR CONTRAST
+
+
+// ----------------------------
+// #PALETTE MANAGEMENT
+// ----------------------------
+// function defining the difference between 2 colors
+
+// @param {Color} $a - first color
+// @param {Color} $b - second color
+// @return {Map}  The color operations to do in order to find $b from $a where keys are the color functions to apply and values are the values to pass to these functions
+@function color-diff($a, $b) {
+  $sat: saturation($a) - saturation($b);
+  $lig:  lightness($a) -  lightness($b);
+  $fn-sat: if($sat > 0, 'desaturate', 'saturate');
+  $fn-lig: if($lig > 0, 'darken', 'lighten');
+
+  @return (
+    adjust-hue: -(hue($a) - hue($b)),
+    #{$fn-sat}: abs($sat),
+    #{$fn-lig}: abs($lig)
+  );
+}
+
+
+// compute the diff for each color from the initial palette
+
+// @param {Map} $palette - palette
+// @requires {function} color-diff
+// @return {List} list of diffs
+@function palette-diff($palette) {
+  $base: map-get($palette, base);
+  $colors: map-get($palette, colors);
+
+  $diffs: ();
+
+  @each $color in $colors {
+    $diffs: append($diffs, color-diff($base, $color));
+  }
+
+  @return $diffs;
+}
+
+
+// initial palette used to define the diff between the base color and each color from the palette. There can be as many colors as one wants.
+//
+// @Link http://www.colourlovers.com/palette/6038/cathedral_grove Initial color palette
+// @type Map
+$base-palette: (
+  base: #597968,
+  colors: #CCE6CC #99CC99 #73A481 #597968 #265350 #002B38 #00161C
+) !default;
+
+
+// Palette diffs
+// Same length as colors key from map-palette
+// @type list
+$palette-diffs: palette-diff($base-palette);
+
+
+// apply differences returned from `color-diff` function to a color in order to retrieve the second color
+
+// @param {Color} $color - color to transform
+// @param {Map} $diff - diff map
+//
+// @return {Color} transformed color
+@function apply-diff($color, $diff) {
+  // We call the $key (function),
+  // passing the $color and the $value as parameters
+  // e.g. `call(adjust-hue, #BADA55, 42)`
+  @each $key, $value in $diff {
+    $color: call($key, $color, $value);
+  }
+
+  @return $color;
+}
+
+
+// create a palette from a base color
+
+// @param {Color} $base-color - base color for the palette
+// @requires {function} palette-diff
+// @requires {function} apply-diff
+// @requires {variable} $base-palette
+// @return {List} list of colors
+@function create-palette($base-color) {
+  $colors: ();
+
+  @each $diff in $palette-diffs {
+    $colors: append($colors, apply-diff($base-color, $diff));
+  }
+
+  @return $colors;
+}
+
+
+// create a list of colors from the base color
+// then turn in into a map with explicit keys
+// @param {Color} $base-color - base color for the palette
+// @requires {function} create-palette
+// @return {Map}
+@function palette($base-color) {
+  $colors: create-palette($base-color);
+  $keys: 'lightest' 'lighter' 'light' 'base' 'dark' 'darker' 'darkest';
+  $palette: ();
+
+  @for $i from 1 through min(length($colors), length($keys)) {
+    $palette: map-merge($palette, (nth($keys, $i): nth($colors, $i)));
+  }
+
+  @return $palette;
+}
+
+
+// create and apply a palette
+// @param {Color} $base-color - base color
+// @requires {function} create-palette
+@mixin draw-palette($base-color) {
+  $palette: create-palette($base-color);
+  $length: length($palette);
+  $color-stops: append((), nth($palette, 1), comma);
+  $stop-size: 100 / $length;
+
+  @for $i from 1 through $length {
+    $color: nth($palette, $i);
+
+    @if $i > 1 {
+      $color-stops: append($color-stops, $color $stop-size * ($i - 1) * 1%);
+    }
+
+    $color-stops: append($color-stops, $color $stop-size * $i * 1%);
+  }
+
+  background: nth($palette, ceil($length / 2));
+  background: linear-gradient(to right, $color-stops);
+}
+
+
+// utility functions to call specific values in a palette
+@function lightest($palette) {
+  @if not map-has-key($palette, 'lightest') {
+    @warn "`#{inspect($palette)}` doesn't seem to have a key named `lightest`.";
+  }
+
+  @return map-get($palette, 'lightest');
+}
+
+@function lighter($palette) {
+  @if not map-has-key($palette, 'lighter') {
+    @warn "`#{inspect($palette)}` doesn't seem to have a key named `lighter`.";
+  }
+
+  @return map-get($palette, 'lighter');
+}
+
+@function light($palette) {
+  @if not map-has-key($palette, 'light') {
+    @warn "`#{inspect($palette)}` doesn't seem to have a key named `light`.";
+  }
+
+  @return map-get($palette, 'light');
+}
+
+@function darkest($palette) {
+  @if not map-has-key($palette, 'darkest') {
+    @warn "`#{inspect($palette)}` doesn't seem to have a key named `darkest`.";
+  }
+
+  @return map-get($palette, 'darkest');
+}
+
+@function darker($palette) {
+  @if not map-has-key($palette, 'darker') {
+    @warn "`#{inspect($palette)}` doesn't seem to have a key named `darker`.";
+  }
+
+  @return map-get($palette, 'darker');
+}
+
+@function dark($palette) {
+  @if not map-has-key($palette, 'dark') {
+    @warn "`#{inspect($palette)}` doesn't seem to have a key named `dark`.";
+  }
+
+  @return map-get($palette, 'dark');
+}
+
+// Palettes
+// Change a value to see the palette adjusted
+// .test-1 { @include draw-palette(red) }
+// .test-2 { @include draw-palette(tomato) }
+// .test-3 { @include draw-palette(deepskyblue) }
+// .test-4 { @include draw-palette(gold) }
+// .test-5 { @include draw-palette(magenta) }
+// .test-6 { @include draw-palette(silver) }
+
+
+// ----------------------------
+// #COLOR CONTRAST
+// ----------------------------
+// color contrast - brightness calculator (props to https://gist.github.com/jlong/f06f5843104ee10006fe)
+$red-magic-number: 241;
+$green-magic-number: 691;
+$blue-magic-number: 68;
+$brightness-divisor: $red-magic-number + $green-magic-number + $blue-magic-number;
+
+@function brightness($color) {
+  // extract color components
+  $red-component: red($color);
+  $green-component: green($color);
+  $blue-component: blue($color);
+
+  // calculate a brightness value in 3d color space between 0 and 255
+  $number: sqrt((($red-component * $red-component * $red-magic-number) + ($green-component * $green-component * $green-magic-number) + ($blue-component * $blue-component * $blue-magic-number)) / $brightness-divisor);
+
+  // convert to percentage and return
+  @return 100% * $number / 255;
+}
+
+@function contrasting-color($color, $light, $dark) {
+  @if brightness($color) < 65% {
+    @return $light;
+  } @else {
+    @return $dark;
+  }
+}

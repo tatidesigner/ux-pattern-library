@@ -25,12 +25,12 @@
     @extend %clear-last-child;
     @include clearfix();
     padding-bottom: spacing-vertical(base);
-    border-bottom: rem(2) solid palette(grayscale-cool, x-light);
+    border-bottom: rem(2) solid edx-palette(grayscale-cool, x-light);
     margin-bottom: spacing-vertical(base);
 
     .button-overlay-demo {
         padding: spacing-vertical(mid-large) spacing-horizontal(mid-large);
-        background: palette(primary, accent) url('#{$image-path}/bg-overlay-example.png') 0 50% no-repeat;
+        background: edx-palette(primary, accent) url('#{$image-path}/bg-overlay-example.png') 0 50% no-repeat;
         background-size: cover;
     }
 }
@@ -51,8 +51,8 @@
 
 %message-warning {
     @extend %message;
-    background-color: palette(warning, light);
-    color: palette(grayscale, black-t);
+    background-color: edx-palette(warning, light);
+    color: edx-palette(grayscale, black-t);
 }
 
 // alerts
@@ -61,10 +61,10 @@
 }
 
 .alert {
-    @include border-left(rem(4) solid palette(grayscale-cool, light));
+    @include border-left(rem(4) solid edx-palette(grayscale-cool, light));
     border-radius: rem(3);
     padding: spacing-vertical(small) spacing-horizontal(base);
-    background-color: palette(grayscale, x-light);
+    background-color: edx-palette(grayscale, x-light);
 }
 
 
@@ -85,22 +85,22 @@
 
 // CASE: information-based alert
 .alert-information {
-    border-color: palette(information, base);
+    border-color: edx-palette(information, base);
 }
 
 // CASE: warning-based alert
 .alert-warning {
-    border-color: palette(warning, base);
+    border-color: edx-palette(warning, base);
 }
 
 // CASE: error-based alert
 .alert-error {
-    border-color: palette(error, base);
+    border-color: edx-palette(error, base);
 }
 
 // CASE: success-based alert
 .alert-success {
-    border-color: palette(success, base);
+    border-color: edx-palette(success, base);
 }
 
 // CASE: ui-toolkit reference
@@ -125,7 +125,7 @@
 
 .badge-ui-toolkit {
     background-color: $pldoc-ui-toolkit-color;
-    color: palette(grayscale-cool, x-dark);
+    color: edx-palette(grayscale-cool, x-dark);
 }
 
 // ------------------------------
@@ -151,7 +151,7 @@
 
         .title-name {
             margin-bottom: spacing-vertical(x-small);
-            color: palette(grayscale, white);
+            color: edx-palette(grayscale, white);
             font-size: font-size(base);
             font-weight: font-weight(bold);
             text-transform: uppercase;
@@ -161,7 +161,7 @@
             &:hover,
             &:active,
             &:focus {
-                color: palette(primary, accent);
+                color: edx-palette(primary, accent);
             }
         }
 
@@ -172,7 +172,7 @@
 
     .pldoc-title-description {
         display: block;
-        color: palette(grayscale, base);
+        color: edx-palette(grayscale, base);
         font-weight: font-weight(normal);
     }
 }
@@ -198,9 +198,9 @@
     .pldoc-link {
         @include transition(background 0.25s ease-in-out);
         display: block;
-        border-bottom: 1px solid palette(grayscale, black);
+        border-bottom: 1px solid edx-palette(grayscale, black);
         padding: spacing-vertical(x-small) spacing-horizontal(mid-large);
-        color: palette(grayscale, x-light);
+        color: edx-palette(grayscale, x-light);
         text-decoration: none;
         font-size: font-size(small);
         font-weight: font-weight(semi-bold);
@@ -209,8 +209,8 @@
         &:hover,
         &:active,
         &:focus {
-            color: palette(primary, light);
-            background: palette(grayscale, black);
+            color: edx-palette(primary, light);
+            background: edx-palette(grayscale, black);
         }
     }
 
@@ -268,13 +268,13 @@
             content: '';
             border-radius: 100%;
             opacity: 0;
-            background: palette(primary, accent);
+            background: edx-palette(primary, accent);
         }
 
         // STATE: is current navigation item
         &.is-current {
-            color: palette(primary, light);
-            background: palette(grayscale, black);
+            color: edx-palette(primary, light);
+            background: edx-palette(grayscale, black);
 
             &:before {
                 opacity: 1.0;
@@ -309,7 +309,7 @@
 
 .pldoc-nav-title {
     margin: 0 spacing-horizontal(mid-large) spacing-vertical(x-small) spacing-horizontal(mid-large);
-    color: palette(grayscale, base);
+    color: edx-palette(grayscale, base);
     font-size: font-size(small);
     font-weight: font-weight(semi-bold);
     text-transform: uppercase;
@@ -326,7 +326,7 @@
 .pldoc-tab-content {
     @extend %depth-2;
     @include transition(box-shadow 0.50s ease-in-out);
-    border: rem(1) solid palette(grayscale, x-light);
+    border: rem(1) solid edx-palette(grayscale, x-light);
     padding: spacing-vertical(base) spacing-horizontal(base);
 
     @include susy-breakpoint($bp-screen-md, $susy-default) {
@@ -335,7 +335,7 @@
 }
 
 .pldoc-settings {
-    background: palette(grayscale, xx-light);
+    background: edx-palette(grayscale, xx-light);
     margin-bottom: spacing-vertical(large);
     padding: spacing-vertical(small) spacing-horizontal(small);
 }
@@ -355,7 +355,7 @@
 // ------------------------------
 .pldoc-wrapper-content-supplemental {
     @extend %depth--3;
-    color: palette(grayscale, x-light);
+    color: edx-palette(grayscale, x-light);
 }
 
 // ------------------------------
@@ -376,7 +376,7 @@
 
     .pldoc-copy {
         font-size: font-size(small);
-        color: palette(grayscale, base);
+        color: edx-palette(grayscale, base);
     }
 }
 
@@ -392,7 +392,7 @@
 
 .pldoc-pattern-header {
     margin-bottom: spacing-vertical(base);
-    border-bottom: 1px solid palette(grayscale, dark);
+    border-bottom: 1px solid edx-palette(grayscale, dark);
     padding-bottom: spacing-vertical(small);
 
     .pldoc-pattern-meta {
@@ -405,7 +405,7 @@
 .pldoc-tab-labels {
     @include clearfix();
     @extend %reset-lists;
-    border-bottom: $pldoc-tab-label-height solid palette(grayscale, x-light);
+    border-bottom: $pldoc-tab-label-height solid edx-palette(grayscale, x-light);
 }
 
 .pldoc-tab-heading {
@@ -427,17 +427,17 @@
         background: $transparent;
         padding: spacing-vertical(x-small) spacing-horizontal(mid-small);
         font-weight: font-weight(semi-bold);
-        color: palette(grayscale, dark);
+        color: edx-palette(grayscale, dark);
 
         &:hover,
         &:focus {
-            border-bottom-color: palette(primary, accent);
-            color: palette(primary, accent);
+            border-bottom-color: edx-palette(primary, accent);
+            color: edx-palette(primary, accent);
         }
 
         &.is-active {
-            border-bottom-color: palette(grayscale, x-dark);
-            color: palette(grayscale, x-dark);
+            border-bottom-color: edx-palette(grayscale, x-dark);
+            color: edx-palette(grayscale, x-dark);
         }
     }
 }
@@ -460,203 +460,203 @@
     .brand-primary {
 
         &.base {
-            background: palette(primary, base);
+            background: edx-palette(primary, base);
         }
 
         &.light {
-            background: palette(primary, light);
+            background: edx-palette(primary, light);
         }
 
         &.x-light {
-            background: palette(primary, x-light);
+            background: edx-palette(primary, x-light);
         }
 
         &.dark {
-            background: palette(primary, dark);
+            background: edx-palette(primary, dark);
         }
 
         &.x-dark {
-            background: palette(primary, x-dark);
+            background: edx-palette(primary, x-dark);
         }
 
         &.accent {
-            background: palette(primary, accent);
+            background: edx-palette(primary, accent);
         }
 
         &.x-accent {
-            background: palette(primary, x-accent);
+            background: edx-palette(primary, x-accent);
         }
     }
 
     .brand-secondary {
-        background: palette(secondary, base);
+        background: edx-palette(secondary, base);
 
         &.base {
-            background: palette(secondary, base);
+            background: edx-palette(secondary, base);
         }
 
         &.light {
-            background: palette(secondary, light);
+            background: edx-palette(secondary, light);
         }
 
         &.x-light {
-            background: palette(secondary, x-light);
+            background: edx-palette(secondary, x-light);
         }
 
         &.dark {
-            background: palette(secondary, dark);
+            background: edx-palette(secondary, dark);
         }
 
         &.x-dark {
-            background: palette(secondary, x-dark);
+            background: edx-palette(secondary, x-dark);
         }
 
         &.accent {
-            background: palette(secondary, accent);
+            background: edx-palette(secondary, accent);
         }
     }
 
     .grayscale {
-        background: palette(grayscale, base);
+        background: edx-palette(grayscale, base);
 
         &.base {
-            background: palette(grayscale, base);
+            background: edx-palette(grayscale, base);
         }
 
         &.light {
-            background: palette(grayscale, light);
+            background: edx-palette(grayscale, light);
         }
 
         &.x-light {
-            background: palette(grayscale, x-light);
+            background: edx-palette(grayscale, x-light);
         }
 
         &.xx-light {
-            background: palette(grayscale, xx-light);
+            background: edx-palette(grayscale, xx-light);
         }
 
         &.white {
-            background: palette(grayscale, white);
+            background: edx-palette(grayscale, white);
         }
 
         &.white-t {
-            background: palette(grayscale, white-t);
+            background: edx-palette(grayscale, white-t);
         }
 
         &.dark {
-            background: palette(grayscale, dark);
+            background: edx-palette(grayscale, dark);
         }
 
         &.x-dark {
-            background: palette(grayscale, x-dark);
+            background: edx-palette(grayscale, x-dark);
         }
 
         &.black {
-            background: palette(grayscale, black);
+            background: edx-palette(grayscale, black);
         }
 
         &.black-t {
-            background: palette(grayscale, black-t);
+            background: edx-palette(grayscale, black-t);
         }
 
         &.trans {
-            background: palette(grayscale, trans);
+            background: edx-palette(grayscale, trans);
         }
 
         &.x-trans {
-            background: palette(grayscale, x-trans);
+            background: edx-palette(grayscale, x-trans);
         }
 
         &.xx-trans {
-            background: palette(grayscale, xx-trans);
+            background: edx-palette(grayscale, xx-trans);
         }
     }
 
     .grayscale-cool {
-        background: palette(grayscale-cool, base);
+        background: edx-palette(grayscale-cool, base);
 
         &.base {
-            background: palette(grayscale-cool, base);
+            background: edx-palette(grayscale-cool, base);
         }
 
         &.light {
-            background: palette(grayscale-cool, light);
+            background: edx-palette(grayscale-cool, light);
         }
 
         &.x-light {
-            background: palette(grayscale-cool, x-light);
+            background: edx-palette(grayscale-cool, x-light);
         }
 
         &.xx-light {
-            background: palette(grayscale-cool, xx-light);
+            background: edx-palette(grayscale-cool, xx-light);
         }
 
         &.dark {
-            background: palette(grayscale-cool, dark);
+            background: edx-palette(grayscale-cool, dark);
         }
 
         &.x-dark {
-            background: palette(grayscale-cool, x-dark);
+            background: edx-palette(grayscale-cool, x-dark);
         }
 
         &.trans {
-            background: palette(grayscale-cool, trans);
+            background: edx-palette(grayscale-cool, trans);
         }
 
         &.x-trans {
-            background: palette(grayscale-cool, x-trans);
+            background: edx-palette(grayscale-cool, x-trans);
         }
 
         &.xx-trans {
-            background: palette(grayscale-cool, xx-trans);
+            background: edx-palette(grayscale-cool, xx-trans);
         }
     }
 
     .success {
-        background: palette(success, base);
+        background: edx-palette(success, base);
 
         &.base {
-            background: palette(success, base);
+            background: edx-palette(success, base);
         }
 
         &.light {
-            background: palette(success, light);
+            background: edx-palette(success, light);
         }
 
         &.dark {
-            background: palette(success, dark);
+            background: edx-palette(success, dark);
         }
     }
 
     .warning {
-        background: palette(warning, base);
+        background: edx-palette(warning, base);
 
         &.base {
-            background: palette(warning, base);
+            background: edx-palette(warning, base);
         }
 
         &.light {
-            background: palette(warning, light);
+            background: edx-palette(warning, light);
         }
 
         &.dark {
-            background: palette(warning, dark);
+            background: edx-palette(warning, dark);
         }
     }
 
     .error {
-        background: palette(error, base);
+        background: edx-palette(error, base);
 
         &.base {
-            background: palette(error, base);
+            background: edx-palette(error, base);
         }
 
         &.light {
-            background: palette(error, light);
+            background: edx-palette(error, light);
         }
 
         &.dark {
-            background: palette(error, dark);
+            background: edx-palette(error, dark);
         }
     }
 
@@ -668,10 +668,10 @@
         border-radius: 0;
         padding: spacing-vertical(small) spacing-horizontal(base);
         box-shadow: none;
-        color: palette(grayscale, white);
+        color: edx-palette(grayscale, white);
 
         &.fail-a11y-color {
-            border-left: rem($baseline/4) solid palette(warning, base);
+            border-left: rem($baseline/4) solid edx-palette(warning, base);
         }
 
         // STATE: hover, focus, and active
@@ -688,7 +688,7 @@
             .color-class,
             .color-reference,
             .color-meta {
-                color: palette(grayscale, black);
+                color: edx-palette(grayscale, black);
             }
         }
 
@@ -698,7 +698,7 @@
             .color-class,
             .color-reference,
             .color-meta {
-                color: palette(grayscale, white);
+                color: edx-palette(grayscale, white);
             }
         }
 
@@ -744,7 +744,7 @@
         .color-meta {
             @include span(12);
             font-size: font-size(x-small);
-            color: palette(grayscale, white);
+            color: edx-palette(grayscale, white);
 
             @include susy-breakpoint($bp-screen-md, $susy-default) {
                 @include span(6 last);
@@ -800,14 +800,14 @@
 
             .icon {
                 font-size: rem(48); // Initial setting to match slider
-                color: palette(primary, base);
+                color: edx-palette(primary, base);
             }
         }
 
         .icon-classname,
         .use-description {
             font-size: font-size(small);
-            color: palette(grayscale, dark);
+            color: edx-palette(grayscale, dark);
         }
 
         @include susy-breakpoint($bp-screen-md, $susy-default) {
@@ -829,11 +829,11 @@
     .depth--3 {
 
         .hd {
-            color: palette(grayscale, white);
+            color: edx-palette(grayscale, white);
         }
 
         .copy {
-            color: palette(grayscale, x-light);
+            color: edx-palette(grayscale, x-light);
         }
     }
 
@@ -881,7 +881,7 @@
     .example-label {
         @extend %copy-micro;
         display: block;
-        color: palette(grayscale, black-t);
+        color: edx-palette(grayscale, black-t);
     }
 }
 
@@ -1200,6 +1200,13 @@
     .example-label {
         @extend %copy-micro;
         display: block;
-        color: palette(grayscale, black-t);
+        color: edx-palette(grayscale, black-t);
     }
 }
+
+.palette-test {
+    height: 100px;
+}
+
+.palette-test-1 { @include draw-palette($brand-primary) }
+.palette-test-2 { @include draw-palette($brand-secondary) }

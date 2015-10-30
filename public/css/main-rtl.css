@@ -7295,6 +7295,22 @@ html, body {
   color: black;
 }
 
+.palette-test {
+  height: 100px;
+}
+
+.palette-test-1 {
+  background: #0079bc;
+  background: -webkit-linear-gradient(left, #9dfff4, #9dfff4 14.28571%, #50ffeb 14.28571%, #50ffeb 28.57143%, #02d3ff 28.57143%, #02d3ff 42.85714%, #0079bc 42.85714%, #0079bc 57.14286%, #001263 57.14286%, #001263 71.42857%, #040022 71.42857%, #040022 85.71429%, #010006 85.71429%, #010006 100%);
+  background: linear-gradient(to right, #9dfff4, #9dfff4 14.28571%, #50ffeb 14.28571%, #50ffeb 28.57143%, #02d3ff 28.57143%, #02d3ff 42.85714%, #0079bc 42.85714%, #0079bc 57.14286%, #001263 57.14286%, #001263 71.42857%, #040022 71.42857%, #040022 85.71429%, #010006 85.71429%, #010006 100%);
+}
+
+.palette-test-2 {
+  background: #cb598d;
+  background: -webkit-linear-gradient(left, white, white 14.28571%, #f4c3f1 14.28571%, #f4c3f1 28.57143%, #e089c1 28.57143%, #e089c1 42.85714%, #cb598d 42.85714%, #cb598d 57.14286%, #b11b1a 57.14286%, #b11b1a 71.42857%, #8a2a00 71.42857%, #8a2a00 85.71429%, #6e2000 85.71429%, #6e2000 100%);
+  background: linear-gradient(to right, white, white 14.28571%, #f4c3f1 14.28571%, #f4c3f1 28.57143%, #e089c1 28.57143%, #e089c1 42.85714%, #cb598d 42.85714%, #cb598d 57.14286%, #b11b1a 57.14286%, #b11b1a 71.42857%, #8a2a00 71.42857%, #8a2a00 85.71429%, #6e2000 85.71429%, #6e2000 100%);
+}
+
 @media (min-width: 1024px) {
   .pldoc-wrapper-content-main {
     width: calc(100% - $pldoc-content-supplemental-width);
