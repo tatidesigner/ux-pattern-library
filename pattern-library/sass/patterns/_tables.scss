@@ -11,7 +11,7 @@
 // #SETTINGS
 // ----------------------------
 // tables
-$table-cell-padding:                        spacing-vertical(small) spacing-horizontal(small) !default;
+$table-cell-padding:                        spacing-vertical(x-small) spacing-horizontal(small) !default;
 $table-condensed-cell-padding:              spacing-vertical(x-small) spacing-horizontal(x-small) !default;
 $table-bg:                                  palette(grayscale, white) !default;
 $table-accent-bg:                           palette(primary, accent) !default;
@@ -23,3 +23,38 @@ $table-border-color:                        palette(grayscale, x-light) !default
 // ----------------------------
 // #GLOBAL
 // ----------------------------
+
+%edx-table-base {
+
+  .highlight {
+    background-color: palette(grayscale-cool, xx-trans);
+  }
+
+  caption {
+    @extend %copy-meta;
+    @extend %copy-de-emphasized;
+    @include text-align(left);
+  }
+
+  tr:hover {
+    background-color: $table-focus-bg;
+  }
+
+  th {
+    @include text-align(left);
+  }
+
+  th,
+  td {
+    padding: $table-cell-padding;
+    border: 1px solid $table-border-color;
+  }
+}
+
+table {
+  @extend %edx-table-base;
+}
+
+
+
+

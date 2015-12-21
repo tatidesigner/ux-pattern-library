@@ -774,7 +774,7 @@ h1, h2, h3, h4, h5, h6, .hd-1,
   color: black;
   font-weight: 400; }
 
-.copy.de-emphasized {
+.copy.de-emphasized, table caption {
   color: #6b6969;
   font-weight: 400; }
 
@@ -799,10 +799,10 @@ h1, h2, h3, h4, h5, h6, .hd-1,
   .copy-base p, .copy-base ol, .copy-base ul, .copy-base dl {
     margin-bottom: 1.25rem; }
 
-.copy-meta {
+.copy-meta, table caption {
   font-size: 0.875rem;
   line-height: 1.6; }
-  .copy-meta p, .copy-meta ol, .copy-meta ul, .copy-meta dl {
+  .copy-meta p, table caption p, .copy-meta ol, table caption ol, .copy-meta ul, table caption ul, .copy-meta dl, table caption dl {
     margin-bottom: 1.25rem; }
 
 .copy-micro {
@@ -1107,7 +1107,6 @@ h1, h2, h3, h4, h5, h6, .hd-1,
     -webkit-transition: all 0.125s ease-in-out 0s;
     transition: all 0.125s ease-in-out 0s;
     -webkit-transform-origin: center center;
-    -ms-transform-origin: center center;
     transform-origin: center center;
     width: 100%;
     height: 0.625rem;
@@ -1128,7 +1127,6 @@ h1, h2, h3, h4, h5, h6, .hd-1,
     -webkit-transition: all 0.125s ease-in-out 0s;
     transition: all 0.125s ease-in-out 0s;
     -webkit-transform-origin: center center;
-    -ms-transform-origin: center center;
     transform-origin: center center;
     width: 100%;
     height: 0.625rem;
@@ -1149,7 +1147,6 @@ h1, h2, h3, h4, h5, h6, .hd-1,
     -webkit-transition: all 0.125s ease-in-out 0s;
     transition: all 0.125s ease-in-out 0s;
     -webkit-transform-origin: center center;
-    -ms-transform-origin: center center;
     transform-origin: center center;
     width: 100%;
     height: 0.625rem;
@@ -1161,7 +1158,6 @@ h1, h2, h3, h4, h5, h6, .hd-1,
     -webkit-transition: all 0.125s ease-in-out 0s;
     transition: all 0.125s ease-in-out 0s;
     -webkit-transform-origin: center center;
-    -ms-transform-origin: center center;
     transform-origin: center center;
     width: 100%;
     height: 0.625rem;
@@ -1224,7 +1220,6 @@ h1, h2, h3, h4, h5, h6, .hd-1,
       -webkit-transition: all 0.125s ease-in-out 0s;
       transition: all 0.125s ease-in-out 0s;
       -webkit-transform-origin: center center;
-      -ms-transform-origin: center center;
       transform-origin: center center;
       width: 100%;
       height: 0.625rem;
@@ -1246,7 +1241,6 @@ h1, h2, h3, h4, h5, h6, .hd-1,
       -webkit-transition: all 0.125s ease-in-out 0s;
       transition: all 0.125s ease-in-out 0s;
       -webkit-transform-origin: center center;
-      -ms-transform-origin: center center;
       transform-origin: center center;
       width: 100%;
       height: 0.625rem;
@@ -6423,5 +6417,21 @@ Note: sure .FONT_NAME comes first for adjoining classes bug in IE7.
 
 .icon-fallback-img .icon-cc {
   background: url("../fonts/edx-icons/fallback-img/cc.svg") center center no-repeat; }
+
+table .highlight {
+  background-color: rgba(158, 177, 185, 0.05); }
+
+table caption {
+  text-align: left; }
+
+table tr:hover {
+  background-color: #a6cfe6; }
+
+table th {
+  text-align: left; }
+
+table th, table td {
+  padding: 0.625rem 0.625rem;
+  border: 1px solid #e7e6e6; }
 
 /*# sourceMappingURL=edx-pattern-library-ltr.css.map */
