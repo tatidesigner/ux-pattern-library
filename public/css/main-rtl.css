@@ -9143,6 +9143,18 @@ html, body {
   background: #00abfa;
 }
 
+.pldoc-pattern-colors .brand-primary.trans {
+  background: rgba(0, 121, 188, 0.5);
+}
+
+.pldoc-pattern-colors .brand-primary.x-trans {
+  background: rgba(0, 121, 188, 0.25);
+}
+
+.pldoc-pattern-colors .brand-primary.xx-trans {
+  background: rgba(0, 121, 188, 0.05);
+}
+
 .pldoc-pattern-colors .brand-secondary {
   background: #cb598d;
 }
@@ -9283,6 +9295,18 @@ html, body {
   background: #1e8142;
 }
 
+.pldoc-pattern-colors .success.trans {
+  background: rgba(37, 184, 90, 0.5);
+}
+
+.pldoc-pattern-colors .success.x-trans {
+  background: rgba(37, 184, 90, 0.25);
+}
+
+.pldoc-pattern-colors .success.xx-trans {
+  background: rgba(37, 184, 90, 0.05);
+}
+
 .pldoc-pattern-colors .warning {
   background: #fdbc56;
 }
@@ -9299,6 +9323,18 @@ html, body {
   background: #af833f;
 }
 
+.pldoc-pattern-colors .warning.trans {
+  background: rgba(253, 188, 86, 0.5);
+}
+
+.pldoc-pattern-colors .warning.x-trans {
+  background: rgba(253, 188, 86, 0.25);
+}
+
+.pldoc-pattern-colors .warning.xx-trans {
+  background: rgba(253, 188, 86, 0.05);
+}
+
 .pldoc-pattern-colors .error {
   background: #b20610;
 }
@@ -9313,6 +9349,18 @@ html, body {
 
 .pldoc-pattern-colors .error.dark {
   background: #7d0910;
+}
+
+.pldoc-pattern-colors .error.trans {
+  background: rgba(178, 6, 16, 0.5);
+}
+
+.pldoc-pattern-colors .error.x-trans {
+  background: rgba(178, 6, 16, 0.25);
+}
+
+.pldoc-pattern-colors .error.xx-trans {
+  background: rgba(178, 6, 16, 0.05);
 }
 
 .pldoc-pattern-colors .example-color {
