@@ -1,0 +1,114 @@
+// ------------------------------
+// edX Pattern Library: Components - Tooltips
+
+// About: Contains base styling for tooltips
+
+// #SETTINGS
+// #GLOBAL
+// #APPLICATION
+
+
+// ----------------------------
+// #SETTINGS
+// ----------------------------
+// tooltips
+$tooltip-background-color:             palette(grayscale-cool, x-dark) !default;
+$tooltip-foreground-color:             palette(grayscale-cool, xx-light) !default;
+$tooltip-notch-size:                   rem(12) !default;
+$tooltip-padding:                      spacing-vertical(x-small);
+$tooltip-border-radius:                $component-border-radius;
+$tooltip-min-width:                    200px;
+
+
+// ----------------------------
+// #GLOBAL
+// ----------------------------
+// notch-bottom is the default so no specific styles are necessary
+%tooltip-hidden {
+    clip: rect(0px, 0px, 0px, 0px);
+    overflow: hidden;
+}
+
+.tooltip {
+    @extend %tooltip-hidden;
+    position: absolute;
+    display: inline-block;
+    border-radius: $tooltip-border-radius;
+    background: $tooltip-background-color;
+    text-align: center;
+    color: $tooltip-foreground-color;
+
+    &.is-visible {
+        display: inline-block;
+        width: auto;
+        min-width: $tooltip-min-width;
+        height: auto;
+        padding: $tooltip-padding;
+        overflow: visible;
+        clip: inherit;
+    }
+
+    &:before {
+        position: absolute;
+        display: block;
+        height: $tooltip-notch-size;
+        width: $tooltip-notch-size;
+        bottom: -($tooltip-notch-size / 2);
+        left: 50%;
+        margin-left: -($tooltip-notch-size / 2);
+        background: $tooltip-background-color;
+        content: "";
+        transform: rotate(45deg);
+    }
+
+    &.notch-top {
+
+        &:before {
+            bottom: auto;
+            top: -($tooltip-notch-size / 2);
+        }
+    }
+
+    &.notch-right {
+
+        &:before {
+            bottom: 50%;
+            left: auto;
+            right: -($tooltip-notch-size / 2);
+            margin-left: auto;
+            margin-bottom: -($tooltip-notch-size / 2);
+        }
+    }
+
+    &.notch-left {
+
+        &:before {
+            bottom: 50%;
+            left: -($tooltip-notch-size / 2);
+            margin-left: auto;
+            margin-bottom: -($tooltip-notch-size / 2);
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ol,
+    ul {
+        &:last-of-type {
+            margin-bottom: 0; // remove bottom margin if only/last
+        }
+    }
+}
+
+// ----------------------------
+// #APPLICATION
+// ----------------------------
+// give the container or the element a class of .has-tooltip to prepare its positioning
+.has-tooltip {
+    position: relative;
+}

@@ -158,3 +158,13 @@
         @extend %grid-container;
     }
 }
+
+// ------------------------------
+// #EXAMPLE - TOOLTIPS
+// ------------------------------
+.example-set {
+
+    .tooltip {
+        position: relative;
+    }
+}
