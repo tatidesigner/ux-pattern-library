@@ -768,7 +768,7 @@ h1, h2, h3, h4, h5, h6, .hd-1,
 .hd-3.emphasized,
 .hd-4.emphasized,
 .hd-5.emphasized,
-.hd-6.emphasized, .alert-title {
+.hd-6.emphasized, .alert-title, .modal .modal-header .modal-header-title, .modal .modal-body .modal-body-title {
   color: black;
   font-weight: 600; }
 
@@ -789,12 +789,12 @@ h1, h2, h3, h4, h5, h6, .hd-1,
   font-size: 2.375rem;
   line-height: 1.4; }
 
-.hd-2 {
+.hd-2, .modal .modal-header .modal-header-title {
   margin-bottom: 1.25rem;
   font-size: 1.75rem;
   line-height: 1.4; }
 
-.hd-3 {
+.hd-3, .modal .modal-body .modal-body-title {
   margin-bottom: 0.625rem;
   font-size: 1.5rem;
   line-height: 1.5; }
@@ -6795,5 +6795,50 @@ Note: sure .FONT_NAME comes first for adjoining classes bug in IE7.
   .alert-success .alert-icon {
     color: #fcfcfc;
     background-color: #25b85a; }
+
+.modal {
+  position: absolute;
+  width: 40rem;
+  height: auto;
+  border: 0.0625rem solid #e7e6e6;
+  border-top: 0.1875rem solid #6fa0ba;
+  background-color: #fcfcfc;
+  color: #4d4b4b;
+  box-shadow: 0 0.125rem 0.125rem 0 #eef1f2; }
+  .modal .modal-header {
+    position: relative;
+    border-bottom: 0.0625rem solid #e7e6e6;
+    padding: 1.25rem;
+    background-color: #efefef;
+    color: #4d4b4b; }
+    .modal .modal-header .modal-header-title {
+      display: inline-block;
+      width: 90%;
+      margin-bottom: 0.3125rem;
+      margin-top: 0.3125rem;
+      vertical-align: middle; }
+    .modal .modal-header .modal-close {
+      display: inline-block;
+      width: 9%;
+      text-align: center;
+      font-size: 1rem;
+      vertical-align: middle; }
+  .modal .modal-body {
+    padding: 1.25rem;
+    background-color: inherit;
+    color: #4d4b4b; }
+    .modal .modal-body .modal-body-title {
+      margin-bottom: 2.5rem; }
+  .modal .modal-footer {
+    border-top: 0.0625rem solid #efefef;
+    padding: 1.25rem;
+    background-color: #fcfcfc;
+    color: #4d4b4b;
+    text-align: center; }
+  .modal.modal-notice {
+    text-align: center; }
+  .modal.modal-choice,
+  .modal.modal-options {
+    text-align: left; }
 
 /*# sourceMappingURL=edx-pattern-library-ltr.css.map */

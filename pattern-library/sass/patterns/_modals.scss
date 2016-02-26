@@ -1,0 +1,116 @@
+// ------------------------------
+// edX Pattern Library: Utilities - Modals
+//
+// About: Contains base styling for modals.
+// ----------------------------
+
+// #CONFIG
+// #UTILITIES
+// #GENERAL
+
+
+// ----------------------------
+// #CONFIG
+// ----------------------------
+$modal-background-cover-color:         palette(grayscale-cool, x-dark) !default;
+$modal-width:                          640px !default;
+$modal-height:                         auto !default;
+$modal-main-background-color:          palette(grayscale, white) !default;
+$modal-header-background-color:        palette(grayscale, xx-light) !default;
+$modal-footer-background-color:        palette(grayscale, white) !default;
+$modal-body-background-color:          inherit !default;
+$modal-body-font-color:                $text-base-color !default;
+$modal-padding:                        spacing-vertical(small) !default;
+$modal-border-color:                   palette(grayscale, x-light) !default;
+$modal-border-size:                    rem(1);
+$modal-border-radius:                  $component-border-radius !default;
+$modal-shadow:                         0 rem(2) rem(2) 0 palette(grayscale-cool, xx-light) !default;
+
+// alert colors
+$modal-information-color:              palette(information, base) !default;
+$modal-warning-color:                  palette(warning, base) !default;
+$modal-error-color:                    palette(error, base) !default;
+$modal-success-color:                  palette(success, base) !default;
+
+
+// ----------------------------
+// #UTILITIES
+// ----------------------------
+// $modal-type (alert|warning|info|success)
+@mixin modal($notice-type) {
+    position: absolute;
+    width: rem($modal-width);
+    height: $modal-height;
+    border: $modal-border-size solid $modal-border-color;
+    border-top: rem(3) solid $notice-type;
+    background-color: $modal-main-background-color;
+    color: $modal-body-font-color;
+    box-shadow: $modal-shadow;
+
+    .modal-header {
+        position: relative;
+        border-bottom: rem(1) solid palette(grayscale, x-light);
+        padding: $modal-padding;
+        background-color: $modal-header-background-color;
+        color: $modal-body-font-color;
+
+        .modal-header-title {
+            @extend %hd-2;
+            @extend %headings-emphasized;
+            display: inline-block;
+            width: 90%;
+            margin-bottom: spacing-vertical(xx-small);
+            margin-top: spacing-vertical(xx-small);
+            vertical-align: middle;
+        }
+
+        .modal-close {
+            display: inline-block;
+            width: 9%;
+            text-align: center;
+            font-size: font-size(base);
+            vertical-align: middle;
+        }
+    }
+
+    .modal-body {
+        padding: $modal-padding;
+        background-color: $modal-body-background-color;
+        color: $modal-body-font-color;
+
+        .modal-body-title {
+            @extend %hd-3;
+            @extend %headings-emphasized;
+            margin-bottom: spacing-vertical(base);
+        }
+    }
+
+    .modal-footer {
+        border-top: rem(1) solid palette(grayscale, xx-light);
+        padding: $modal-padding;
+        background-color: $modal-footer-background-color;
+        color: $modal-body-font-color;
+        text-align: center;
+    }
+}
+
+@mixin modal-alignment($alignment) {
+    text-align: $alignment;
+}
+
+
+// ----------------------------
+// #GENERAL
+// ----------------------------
+.modal {
+    @include modal($modal-information-color);
+
+    &.modal-notice {
+        @include modal-alignment(center);
+    }
+
+    &.modal-choice,
+    &.modal-options {
+        @include modal-alignment(left);
+    }
+}

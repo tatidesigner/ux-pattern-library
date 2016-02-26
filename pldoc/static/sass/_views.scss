@@ -158,3 +158,13 @@
         @extend %grid-container;
     }
 }
+
+// ------------------------------
+// #EXAMPLE - MODALS
+// ------------------------------
+.example-set {
+
+    .modal {
+        position: relative;
+    }
+}
