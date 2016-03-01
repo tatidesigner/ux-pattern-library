@@ -48,40 +48,43 @@ $modal-success-color:                  palette(success, base) !default;
     box-shadow: $modal-shadow;
 
     .modal-header {
-        position: relative;
         border-bottom: rem(1) solid palette(grayscale, x-light);
         padding: $modal-padding;
         background-color: $modal-header-background-color;
         color: $modal-body-font-color;
+    }
 
-        .modal-header-title {
-            @extend %hd-2;
-            @extend %headings-emphasized;
-            display: inline-block;
-            width: 90%;
-            margin-bottom: spacing-vertical(xx-small);
-            margin-top: spacing-vertical(xx-small);
-            vertical-align: middle;
-        }
+    .modal-header-title {
+        @extend %hd-2;
+        @extend %headings-emphasized;
+        display: inline-block;
+        width: 90%;
+        margin-bottom: spacing-vertical(xx-small);
+        margin-top: spacing-vertical(xx-small);
+        vertical-align: middle;
+    }
 
-        .modal-close {
-            display: inline-block;
-            width: 9%;
-            text-align: center;
-            font-size: font-size(base);
-            vertical-align: middle;
-        }
+    .modal-close {
+        display: inline-block;
+        width: 9%;
+        text-align: center;
+        font-size: font-size(base);
+        vertical-align: middle;
     }
 
     .modal-body {
         padding: $modal-padding;
         background-color: $modal-body-background-color;
         color: $modal-body-font-color;
+    }
 
-        .modal-body-title {
-            @extend %hd-3;
-            @extend %headings-emphasized;
-            margin-bottom: spacing-vertical(base);
+    .modal-body-title {
+        @extend %hd-3;
+        @extend %headings-emphasized;
+        margin-bottom: spacing-vertical(base);
+
+        &:first-of-type {
+            margin-top: spacing-vertical(small);
         }
     }
 
@@ -90,7 +93,6 @@ $modal-success-color:                  palette(success, base) !default;
         padding: $modal-padding;
         background-color: $modal-footer-background-color;
         color: $modal-body-font-color;
-        text-align: center;
     }
 }
 
@@ -105,12 +107,11 @@ $modal-success-color:                  palette(success, base) !default;
 .modal {
     @include modal($modal-information-color);
 
-    &.modal-notice {
+    &.modal-prompt {
         @include modal-alignment(center);
     }
 
-    &.modal-choice,
-    &.modal-options {
+    &.modal-workflow {
         @include modal-alignment(left);
     }
 }

@@ -1242,7 +1242,7 @@ h1, h2, h3, h4, h5, h6, .hd-1,
 .hd-3.emphasized,
 .hd-4.emphasized,
 .hd-5.emphasized,
-.hd-6.emphasized, .alert-title, .modal .modal-header .modal-header-title, .modal .modal-body .modal-body-title {
+.hd-6.emphasized, .alert-title, .modal .modal-header-title, .modal .modal-body-title {
   color: black;
   font-weight: 600;
 }
@@ -1267,13 +1267,13 @@ h1, h2, h3, h4, h5, h6, .hd-1,
   line-height: 1.4;
 }
 
-.hd-2, .modal .modal-header .modal-header-title {
+.hd-2, .modal .modal-header-title {
   margin-bottom: 1.25rem;
   font-size: 1.75rem;
   line-height: 1.4;
 }
 
-.hd-3, .modal .modal-body .modal-body-title {
+.hd-3, .modal .modal-body-title {
   margin-bottom: 0.625rem;
   font-size: 1.5rem;
   line-height: 1.5;
@@ -9272,14 +9272,13 @@ Note: sure .FONT_NAME comes first for adjoining classes bug in IE7.
 }
 
 .modal .modal-header {
-  position: relative;
   border-bottom: 0.0625rem solid #e7e6e6;
   padding: 1.25rem;
   background-color: #efefef;
   color: #4d4b4b;
 }
 
-.modal .modal-header .modal-header-title {
+.modal .modal-header-title {
   display: inline-block;
   width: 90%;
   margin-bottom: 0.3125rem;
@@ -9287,7 +9286,7 @@ Note: sure .FONT_NAME comes first for adjoining classes bug in IE7.
   vertical-align: middle;
 }
 
-.modal .modal-header .modal-close {
+.modal .modal-close {
   display: inline-block;
   width: 9%;
   text-align: center;
@@ -9301,8 +9300,12 @@ Note: sure .FONT_NAME comes first for adjoining classes bug in IE7.
   color: #4d4b4b;
 }
 
-.modal .modal-body .modal-body-title {
+.modal .modal-body-title {
   margin-bottom: 2.5rem;
+}
+
+.modal .modal-body-title:first-of-type {
+  margin-top: 0.625rem;
 }
 
 .modal .modal-footer {
@@ -9310,15 +9313,13 @@ Note: sure .FONT_NAME comes first for adjoining classes bug in IE7.
   padding: 1.25rem;
   background-color: #fcfcfc;
   color: #4d4b4b;
+}
+
+.modal.modal-prompt {
   text-align: center;
 }
 
-.modal.modal-notice {
-  text-align: center;
-}
-
-.modal.modal-choice,
-.modal.modal-options {
+.modal.modal-workflow {
   text-align: left;
 }
 
