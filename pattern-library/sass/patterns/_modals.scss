@@ -37,39 +37,44 @@ $modal-success-color:                  palette(success, base) !default;
 // #UTILITIES
 // ----------------------------
 // $modal-type (alert|warning|info|success)
-@mixin modal($notice-type) {
+@mixin modal() {
     position: absolute;
     width: rem($modal-width);
     height: $modal-height;
     border: $modal-border-size solid $modal-border-color;
-    border-top: rem(3) solid $notice-type;
     background-color: $modal-main-background-color;
     color: $modal-body-font-color;
     box-shadow: $modal-shadow;
 
     .modal-header {
+        @include align-items(stretch);
+        @include display(flex);
+        @include flex-direction(row);
+        @include justify-content(flex-start);
         border-bottom: rem(1) solid palette(grayscale, x-light);
         padding: $modal-padding;
         background-color: $modal-header-background-color;
         color: $modal-body-font-color;
-    }
 
-    .modal-header-title {
-        @extend %hd-2;
-        @extend %headings-emphasized;
-        display: inline-block;
-        width: 90%;
-        margin-bottom: spacing-vertical(xx-small);
-        margin-top: spacing-vertical(xx-small);
-        vertical-align: middle;
-    }
+        .modal-header-title {
+            @extend %hd-2;
+            @extend %headings-emphasized;
+            margin-bottom: spacing-vertical(xx-small);
+            margin-top: spacing-vertical(xx-small);
+            vertical-align: middle;
+        }
 
-    .modal-close {
-        display: inline-block;
-        width: 9%;
-        text-align: center;
-        font-size: font-size(base);
-        vertical-align: middle;
+        .modal-close {
+            width: font-size(base);
+            text-align: right;
+            font-size: font-size(base);
+            vertical-align: middle;
+        }
+
+        .modal-paged {
+            font-size: font-size(base);
+            color: palette(grayscale-cool, dark);
+        }
     }
 
     .modal-body {
@@ -78,7 +83,7 @@ $modal-success-color:                  palette(success, base) !default;
         color: $modal-body-font-color;
     }
 
-    .modal-body-title {
+    .modal-body-heading {
         @extend %hd-3;
         @extend %headings-emphasized;
         margin-bottom: spacing-vertical(base);
@@ -105,13 +110,33 @@ $modal-success-color:                  palette(success, base) !default;
 // #GENERAL
 // ----------------------------
 .modal {
-    @include modal($modal-information-color);
+    @include modal();
+    border-top: rem(3) solid $modal-information-color;
 
-    &.modal-prompt {
+    &.modal-centered {
         @include modal-alignment(center);
+    }
+
+    &.modal-warning {
+        @include modal-alignment(center);
+        border-top: rem(3) solid $modal-warning-color;
+    }
+
+    &.modal-alert {
+        @include modal-alignment(center);
+        border-top: rem(3) solid $modal-error-color;
+    }
+
+    &.modal-success {
+        @include modal-alignment(center);
+        border-top: rem(3) solid $modal-success-color;
     }
 
     &.modal-workflow {
         @include modal-alignment(left);
     }
+}
+
+.is-flexible {
+    @include flex(1);
 }
