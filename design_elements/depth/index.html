@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <base href="/">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>
+        
+        UI Depth &middot; edX Pattern Library
+        
+    </title>
+
+    <meta name="description" content="The Visual, UI, and Front End styleguide for edX's applications">
+
+    <link rel="stylesheet" href="/public/css/main-ltr.css">
+
+</head>
+
+
+<body class="pldoc view-">
+    <div class="pldoc-nav-skip sr-only">
+        <a class="pldoc-action-skip" href="#content-main">Skip to the main content</a>
+    </div>
+
+    <hr class="pldoc-divider sr-only">
+
+    <div class="pldoc-wrapper-view">
+        <div class="pldoc-wrapper-header-site">
+    <header class="pldoc-header-site" role="banner" aria-labelledby="pldoc-header-site-title">
+        <div class="pldoc-header-main">
+            <h1 class="hd-2 de-emphasized pldoc-header-site-title">
+                <a href="/">
+                    <img class="pldoc-header-logo" src="/./public/images/edx-logo.svg"
+                         alt="edX Pattern Library home" />
+                    <span>Pattern Library</span>
+                </a>
+            </h1>
+        </div>
+    </header>
+</div>
+
+
+        <div class="pldoc-wrapper-content" id="content-top" tabindex="-1">
+            <div class="pldoc-content">
+                <div class="pldoc-wrapper-content-supplemental">
+                    <nav class="pldoc-nav pldoc-nav-internal" role="navigation" aria-label="edX Pattern Library">
+    <h2 class="pldoc-heading pldoc-nav-title hd-6">edX Pattern Library</h2>
+    <ul class="list-unstyled list-patterns">
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./">
+    
+    Introduction
+    
+        </a>
+    
+</li>
+
+    </ul>
+</nav>
+
+
+<nav class="pldoc-nav pldoc-nav-internal" role="navigation" aria-label="Design Elements">
+    <h2 class="pldoc-heading pldoc-nav-title hd-6">Design Elements</h2>
+    <ul class="list-unstyled list-patterns">
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/colors/">
+    
+    Colors
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/copy/">
+    
+    Copy
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/grid/">
+    
+    Grid System
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/headings/">
+    
+    Headings
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/icons/">
+    
+    Icons
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/layouts/">
+    
+    Layouts
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent is-current">
+    
+    UI Depth
+    
+</li>
+
+    
+    </ul>
+</nav>
+
+
+
+<nav class="pldoc-nav pldoc-nav-internal" role="navigation" aria-label="Components">
+    <h2 class="pldoc-heading pldoc-nav-title hd-6">Components</h2>
+    <ul class="list-unstyled list-patterns">
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/alerts/">
+    
+    Alerts
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/buttons/">
+    
+    Buttons
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/dropdown-menu/">
+    
+    Dropdown Menu
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/forms/">
+    
+    Forms
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/lists/">
+    
+    Lists
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/tables/">
+    
+    Tables
+    
+        </a>
+    
+</li>
+
+    
+    </ul>
+</nav>
+
+
+                </div>
+
+                <hr class="pldoc-divider sr-only">
+
+                <div class="pldoc-wrapper-content-main">
+                    <main class="pldoc-content-main" id="content-main" aria-label="Content">
+                        
+
+
+<section class="pldoc-wrapper-pattern">
+    <article class="pldoc-pattern pldoc-pattern-depth" id="depth" tabindex="-1" aria-label="depth">
+
+        <header class="pldoc-pattern-header">
+            <h1 class="pldoc-heading pldoc-pattern-title hd-4">UI Depth</h1>
+
+            <ul class="list-inline pldoc-pattern-meta copy-micro de-emphasized">
+                
+                <li class="item meta meta-examplelink">
+                    <a class="pldoc-link" href="examples/depth"><span class="sr-only">View </span>Detailed Example</a>
+                </li>
+                
+                
+            </ul>
+        </header>
+
+        <div class="pldoc-pattern-info">
+            <p class="copy-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi labore pariatur nam minima unde nobis, repellat enim quo illo veniam perspiciatis fugiat quibusdam voluptatibus. Vero atque alias, nostrum quidem commodi.</p>
+        </div>
+
+        
+
+        <div class="pldoc-tab-wrapper">
+            
+            <ul class="pldoc-tab-labels pldoc-pattern-navigation">
+                <li class="pldoc-tab-label">
+                    <button class="pldoc-link pldoc-link-preview is-active" data-href="#depth-preview">Preview</button>
+                </li>
+                <li class="pldoc-tab-label">
+                    <button class="pldoc-link pldoc-link-markup" data-href="#depth-markup">Markup</button>
+                </li>
+                
+                
+                <li class="pldoc-tab-label">
+                    <button class="pldoc-link pldoc-link-styling" data-href="#depth-styling">Styling</button>
+                </li>
+                
+            </ul>
+            
+
+            <div class="pldoc-tabs">
+                <div class="pldoc-tab pldoc-pattern-preview is-active" id="depth-preview" tabindex="-1">
+                    <h2 class="pldoc-heading pldoc-tab-heading pldoc-pattern-preview-title">UI Depth Preview</h2>
+
+                    <div class="pldoc-tab-content">
+                        
+
+                        <h3 class="hd-6 example-set-hd">UI Depth-level -3</h3>
+<div class="example-set">
+    <div class="depth depth--3">
+        <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+        <p class="copy-meta">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.</p>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">UI Depth-level -2</h3>
+<div class="example-set">
+    <div class="depth depth--2">
+        <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+        <p class="copy-meta">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.</p>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">UI Depth-level -1</h3>
+<div class="example-set">
+    <div class="depth depth--1">
+        <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+        <p class="copy-meta">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.</p>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">UI Depth-level 0</h3>
+<div class="example-set">
+    <div class="depth depth-0">
+        <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+        <p class="copy-meta">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.</p>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">UI Depth-level 1</h3>
+<div class="example-set">
+    <div class="depth depth-1">
+        <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+        <p class="copy-meta">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.</p>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">UI Depth-level 2</h3>
+<div class="example-set">
+    <div class="depth depth-2">
+        <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+        <p class="copy-meta">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.</p>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">Well</h3>
+<div class="example-set">
+    <div class="well">
+        <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+        <p class="copy-meta">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.</p>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">Slat</h3>
+<div class="example-set">
+    <div class="slat">
+        <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+        <p class="copy-meta">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. </p>
+    </div>
+
+    <div class="slat">
+        <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+        <p class="copy-meta">This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.</p>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">Card</h3>
+<div class="example-set">
+    <div class="card">
+        <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+        <p class="copy-meta">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. </p>
+    </div>
+
+    <div class="card">
+        <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+        <p class="copy-meta">This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.</p>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">Zebra Stripe</h3>
+<div class="example-set">
+    <ul class="zebra-stripe">
+        <li class="slat">
+            <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+            <p class="copy-meta">This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.</p>
+        </li>
+        <li class="slat">
+            <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+            <p class="copy-meta">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson.</p>
+        </li>
+        <li class="slat">
+            <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+            <p class="copy-meta">This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.</p>
+        </li>
+        <li class="slat">
+            <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+            <p class="copy-meta">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson.</p>
+        </li>
+        <li class="slat">
+            <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+            <p class="copy-meta">This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.</p>
+        </li>
+        <li class="slat">
+            <h4 class="hd hd-5">Darkwell has a troubled economy</h4>
+            <p class="copy-meta">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson.</p>
+        </li>
+    </ul>
+</div>
+
+                    </div>
+                </div>
+
+                
+                <div class="pldoc-tab pldoc-pattern-markup is-hidden" id="depth-markup" tabindex="-1">
+                    <h2 class="pldoc-heading pldoc-tab-heading pldoc-pattern-markup-title">UI Depth Markup</h2>
+
+                    <div class="pldoc-tab-content">
+                        
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>UI Depth-level -3<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"depth depth--3"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>UI Depth-level -2<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"depth depth--2"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>UI Depth-level -1<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"depth depth--1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>UI Depth-level 0<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"depth depth-0"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>UI Depth-level 1<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"depth depth-1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>UI Depth-level 2<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"depth depth-2"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Well<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"well"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Slat<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slat"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slat"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Card<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Zebra Stripe<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"zebra-stripe"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"slat"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"slat"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"slat"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"slat"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"slat"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"slat"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd hd-5"</span><span class="nt">&gt;</span>Darkwell has a troubled economy<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+                    </div>
+                </div>
+
+                <div class="pldoc-tab pldoc-pattern-styling is-hidden" id="depth-styling" tabindex="-1">
+                    <h2 class="pldoc-heading pldoc-tab-heading pldoc-pattern-styling-title">UI Depth Style</h2>
+
+                    <div class="pldoc-tab-content">
+                        <p class="copy-base">View <a class="pldoc-link" href="https://github.com/edx/ux-pattern-library/blob/master/pattern-library/sass/patterns/_depth.scss">the original source of the CSS as SCSS</a> in this project's repo.</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </article>
+</section>
+
+
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <div class="pldoc-wrapper-footer-site">
+    <footer class="pldoc-footer-site">
+        <div class="pldoc-footer-site-copyright">
+            <p class="pldoc-copy copy-micro">
+                Copyright &copy; <time datetime="2016-05-05T10:29:16-04:00">2016</time> edX.
+            </p>
+            <p class="pldoc-copy copy-micro">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+            </p>
+            <p class="pldoc-copy copy-micro">
+                These works by <a xmlns:cc="http://creativecommons.org/ns#" href="http://open.edx.org" property="cc:attributionName" rel="cc:attributionURL">edX Inc.</a>
+                are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+        </div>
+    </footer>
+</div>
+
+    </div>
+
+    <script src="/public/pattern-library.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <base href="/">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>
+        
+        Grid System &middot; edX Pattern Library
+        
+    </title>
+
+    <meta name="description" content="The Visual, UI, and Front End styleguide for edX's applications">
+
+    <link rel="stylesheet" href="/public/css/main-ltr.css">
+
+</head>
+
+
+<body class="pldoc view-">
+    <div class="pldoc-nav-skip sr-only">
+        <a class="pldoc-action-skip" href="#content-main">Skip to the main content</a>
+    </div>
+
+    <hr class="pldoc-divider sr-only">
+
+    <div class="pldoc-wrapper-view">
+        <div class="pldoc-wrapper-header-site">
+    <header class="pldoc-header-site" role="banner" aria-labelledby="pldoc-header-site-title">
+        <div class="pldoc-header-main">
+            <h1 class="hd-2 de-emphasized pldoc-header-site-title">
+                <a href="/">
+                    <img class="pldoc-header-logo" src="/./public/images/edx-logo.svg"
+                         alt="edX Pattern Library home" />
+                    <span>Pattern Library</span>
+                </a>
+            </h1>
+        </div>
+    </header>
+</div>
+
+
+        <div class="pldoc-wrapper-content" id="content-top" tabindex="-1">
+            <div class="pldoc-content">
+                <div class="pldoc-wrapper-content-supplemental">
+                    <nav class="pldoc-nav pldoc-nav-internal" role="navigation" aria-label="edX Pattern Library">
+    <h2 class="pldoc-heading pldoc-nav-title hd-6">edX Pattern Library</h2>
+    <ul class="list-unstyled list-patterns">
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./">
+    
+    Introduction
+    
+        </a>
+    
+</li>
+
+    </ul>
+</nav>
+
+
+<nav class="pldoc-nav pldoc-nav-internal" role="navigation" aria-label="Design Elements">
+    <h2 class="pldoc-heading pldoc-nav-title hd-6">Design Elements</h2>
+    <ul class="list-unstyled list-patterns">
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/colors/">
+    
+    Colors
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/copy/">
+    
+    Copy
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent is-current">
+    
+    Grid System
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/headings/">
+    
+    Headings
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/icons/">
+    
+    Icons
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/layouts/">
+    
+    Layouts
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/depth/">
+    
+    UI Depth
+    
+        </a>
+    
+</li>
+
+    
+    </ul>
+</nav>
+
+
+
+<nav class="pldoc-nav pldoc-nav-internal" role="navigation" aria-label="Components">
+    <h2 class="pldoc-heading pldoc-nav-title hd-6">Components</h2>
+    <ul class="list-unstyled list-patterns">
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/alerts/">
+    
+    Alerts
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/buttons/">
+    
+    Buttons
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/dropdown-menu/">
+    
+    Dropdown Menu
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/forms/">
+    
+    Forms
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/lists/">
+    
+    Lists
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/tables/">
+    
+    Tables
+    
+        </a>
+    
+</li>
+
+    
+    </ul>
+</nav>
+
+
+                </div>
+
+                <hr class="pldoc-divider sr-only">
+
+                <div class="pldoc-wrapper-content-main">
+                    <main class="pldoc-content-main" id="content-main" aria-label="Content">
+                        
+
+
+<section class="pldoc-wrapper-pattern">
+    <article class="pldoc-pattern pldoc-pattern-grid" id="grid" tabindex="-1" aria-label="grid">
+
+        <header class="pldoc-pattern-header">
+            <h1 class="pldoc-heading pldoc-pattern-title hd-4">Grid System</h1>
+
+            <ul class="list-inline pldoc-pattern-meta copy-micro de-emphasized">
+                
+                <li class="item meta meta-examplelink">
+                    <a class="pldoc-link" href="examples/grid"><span class="sr-only">View </span>Detailed Example</a>
+                </li>
+                
+                
+                <li class="item meta meta-doclink">
+                    <a class="pldoc-link" href="https://github.com/edx/ux-pattern-library/wiki/Styleguide:-Grid-System"><span class="sr-only">View </span>Documentation</a>
+                </li>
+                
+            </ul>
+        </header>
+
+        <div class="pldoc-pattern-info">
+            <p class="copy-base">A responsive, mobile first fluid grid system, based on Susy and Breakpoint, that appropriately scales up to 12 columns as the device or viewport size increases. It includes some predefined classes for easy layout options, while providing Sass utilities for generating more semantic layouts.</p>
+        </div>
+
+        
+
+        <div class="pldoc-tab-wrapper">
+            
+            <ul class="pldoc-tab-labels pldoc-pattern-navigation">
+                <li class="pldoc-tab-label">
+                    <button class="pldoc-link pldoc-link-preview is-active" data-href="#grid-preview">Preview</button>
+                </li>
+                <li class="pldoc-tab-label">
+                    <button class="pldoc-link pldoc-link-markup" data-href="#grid-markup">Markup</button>
+                </li>
+                
+                
+                <li class="pldoc-tab-label">
+                    <button class="pldoc-link pldoc-link-styling" data-href="#grid-styling">Styling</button>
+                </li>
+                
+            </ul>
+            
+
+            <div class="pldoc-tabs">
+                <div class="pldoc-tab pldoc-pattern-preview is-active" id="grid-preview" tabindex="-1">
+                    <h2 class="pldoc-heading pldoc-tab-heading pldoc-pattern-preview-title">Grid System Preview</h2>
+
+                    <div class="pldoc-tab-content">
+                        
+
+                        <h3 class="hd-6 example-set-hd">Basic Grid</h3>
+
+<div class="example-set-description copy-meta">
+    <p>The basic grid gives you twelve columns to work with across all various breakpoints.</p>
+</div>
+
+<div class="example-set">
+    <div class="example-grid example-grid-basic">
+        <div class="grid-container">
+            <div class="col col-first">
+                <span class="example-label">Col</span>
+            </div>
+
+            <div class="col">
+                <span class="example-label">Col</span>
+            </div>
+
+            <div class="col">
+                <span class="example-label">Col</span>
+            </div>
+
+            <div class="col">
+                <span class="example-label">Col</span>
+            </div>
+
+            <div class="col">
+                <span class="example-label">Col</span>
+            </div>
+
+            <div class="col">
+                <span class="example-label">Col</span>
+            </div>
+
+            <div class="col">
+                <span class="example-label">Col</span>
+            </div>
+
+            <div class="col">
+                <span class="example-label">Col</span>
+            </div>
+
+            <div class="col">
+                <span class="example-label">Col</span>
+            </div>
+
+            <div class="col">
+               <span class="example-label">Col</span>
+            </div>
+
+            <div class="col">
+                <span class="example-label">Col</span>
+            </div>
+
+            <div class="col col-last">
+                <span class="example-label">Col</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">Basic Grid (with column shifts)</h3>
+
+<div class="example-set-description copy-meta">
+    <p>The Basic Grid with column shifts allows you to create a two-column layout where there is (column-sized) space before (pre-*) or after (post-*) the content.</p>
+</div>
+
+<div class="example-set">
+    <div class="example-grid example-grid-shifts">
+        <div class="grid-container">
+            <section class="shifts-pre">
+                <div class="col col-A">
+                    <span class="example-label">Pre 1 Col</span>
+                </div>
+
+                <div class="col col-B">
+                    <span class="example-label">Pre 2 Col</span>
+                </div>
+
+                <div class="col col-C">
+                    <span class="example-label">Pre 3 Col</span>
+                </div>
+
+                <div class="col col-D">
+                    <span class="example-label">Pre 4 Col</span>
+                </div>
+
+                <div class="col col-E">
+                    <span class="example-label">Pre 5 Col</span>
+                </div>
+
+                <div class="col col-F">
+                    <span class="example-label">Pre 6 Col</span>
+                </div>
+
+                <div class="col col-G">
+                    <span class="example-label">Pre 7 Col</span>
+                </div>
+
+                <div class="col col-H">
+                    <span class="example-label">Pre 8 Col</span>
+                </div>
+
+                <div class="col col-I">
+                    <span class="example-label">Pre 9 Col</span>
+                </div>
+
+                <div class="col col-J">
+                   <span class="example-label">Pre 10 Col</span>
+                </div>
+
+                <div class="col col-K">
+                    <span class="example-label">Pre 11 Col</span>
+                </div>
+            </section>
+
+            <section class="shifts-post">
+                <div class="col col-A">
+                    <span class="example-label">Post 1 Col</span>
+                </div>
+
+                <div class="col col-B">
+                    <span class="example-label">Post 2 Col</span>
+                </div>
+
+                <div class="col col-C">
+                    <span class="example-label">Post 3 Col</span>
+                </div>
+
+                <div class="col col-D">
+                    <span class="example-label">Post 4 Col</span>
+                </div>
+
+                <div class="col col-E">
+                    <span class="example-label">Post 5 Col</span>
+                </div>
+
+                <div class="col col-F">
+                    <span class="example-label">Post 6 Col</span>
+                </div>
+
+                <div class="col col-G">
+                    <span class="example-label">Post 7 Col</span>
+                </div>
+
+                <div class="col col-H">
+                    <span class="example-label">Post 8 Col</span>
+                </div>
+
+                <div class="col col-I">
+                    <span class="example-label">Post 9 Col</span>
+                </div>
+
+                <div class="col col-J">
+                   <span class="example-label">Post 10 Col</span>
+                </div>
+
+                <div class="col col-K">
+                    <span class="example-label">Post 11 Col</span>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">Utility Class-based Grid</h3>
+
+<div class="example-set-description copy-meta">
+    <p>The grid can be used via specific classes on DOM elements. Defining rows, columns, and pre/post shifting of columns are all available.</p>
+</div>
+
+<div class="example-set">
+    <div class="example-grid example-grid-classes">
+        <div class="grid-container grid-manual">
+            <div class="row">
+                <div class="col col-1">
+                    <span class="example-label">col-1</span>
+                </div>
+
+                <div class="col col-1">
+                    <span class="example-label">col-1</span>
+                </div>
+
+                <div class="col col-1">
+                    <span class="example-label">col-1</span>
+                </div>
+
+                <div class="col col-1">
+                    <span class="example-label">col-1</span>
+                </div>
+
+                <div class="col col-1">
+                    <span class="example-label">col-1</span>
+                </div>
+
+                <div class="col col-1">
+                    <span class="example-label">col-1</span>
+                </div>
+
+                <div class="col col-1">
+                    <span class="example-label">col-1</span>
+                </div>
+
+                <div class="col col-1">
+                    <span class="example-label">col-1</span>
+                </div>
+
+                <div class="col col-1">
+                    <span class="example-label">col-1</span>
+                </div>
+
+                <div class="col col-1">
+                    <span class="example-label">col-1</span>
+                </div>
+
+                <div class="col col-1">
+                    <span class="example-label">col-1</span>
+                </div>
+
+                <div class="col col-1">
+                    <span class="example-label">col-1</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-2">
+                    <span class="example-label">col-2</span>
+                </div>
+
+                <div class="col col-2">
+                    <span class="example-label">col-2</span>
+                </div>
+
+                <div class="col col-2">
+                    <span class="example-label">col-2</span>
+                </div>
+
+                <div class="col col-2">
+                    <span class="example-label">col-2</span>
+                </div>
+
+                <div class="col col-2">
+                    <span class="example-label">col-2</span>
+                </div>
+
+                <div class="col col-2">
+                    <span class="example-label">col-2</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-3">
+                    <span class="example-label">col-3</span>
+                </div>
+
+                <div class="col col-3">
+                    <span class="example-label">col-3</span>
+                </div>
+
+                <div class="col col-3">
+                    <span class="example-label">col-3</span>
+                </div>
+
+                <div class="col col-3">
+                    <span class="example-label">col-3</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-4">
+                    <span class="example-label">col-4</span>
+                </div>
+
+                <div class="col col-4">
+                    <span class="example-label">col-4</span>
+                </div>
+
+                <div class="col col-4">
+                    <span class="example-label">col-4</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-12">
+                    <span class="example-label">col-12</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-2 pre-5 post-5">
+                    <span class="example-label">col-2</span>
+                    <span class="example-label">pre-5</span>
+                    <span class="example-label">post-5</span>
+                </div>
+
+                <div class="col col-4 pre-4 post-4">
+                    <span class="example-label">col-4</span>
+                    <span class="example-label">pre-4</span>
+                    <span class="example-label">post-4</span>
+                </div>
+
+                <div class="col col-6 pre-3 post-3">
+                    <span class="example-label">col-6</span>
+                    <span class="example-label">pre-3</span>
+                    <span class="example-label">post-3</span>
+                </div>
+
+                <div class="col col-8 pre-2 post-2">
+                    <span class="example-label">col-8</span>
+                    <span class="example-label">pre-2</span>
+                    <span class="example-label">post-2</span>
+                </div>
+
+                <div class="col col-10 pre-1 post-1">
+                    <span class="example-label">col-10</span>
+                    <span class="example-label">pre-1</span>
+                    <span class="example-label">post-1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">Utility Class-based Responsive Grid</h3>
+
+<div class="example-set-description copy-meta">
+    <p>Columns can also be scoped to specific responsive breakpoints. Column utility classes on DOM elements are prefixed with one of the preset responsive breakpoints.</p>
+</div>
+
+<div class="example-set">
+    <div class="example-grid example-grid-responsive grid-container">
+        <div class="grid-container grid-manual">
+            <div class="row">
+                <div class="col col-12 sm-col-6 md-col-4 lg-col-2 xl-col-2">
+                    <span class="example-label">xl-col-2</span>
+                    <span class="example-label">lg-col-2</span>
+                    <span class="example-label">md-col-4</span>
+                    <span class="example-label">sm-col-6</span>
+                    <span class="example-label">col-12 (base)</span>
+                </div>
+
+                <div class="col col-12 sm-col-6 md-col-4 lg-col-2 xl-col-2">
+                    <span class="example-label">xl-col-2</span>
+                    <span class="example-label">lg-col-2</span>
+                    <span class="example-label">md-col-4</span>
+                    <span class="example-label">sm-col-6</span>
+                    <span class="example-label">col-12 (base)</span>
+                </div>
+
+                <div class="col col-12 sm-col-6 md-col-4 lg-col-2 xl-col-2">
+                    <span class="example-label">xl-col-2</span>
+                    <span class="example-label">lg-col-2</span>
+                    <span class="example-label">md-col-4</span>
+                    <span class="example-label">sm-col-6</span>
+                    <span class="example-label">col-12 (base)</span>
+                </div>
+
+                <div class="col col-12 sm-col-6 md-col-4 lg-col-2 xl-col-2">
+                    <span class="example-label">xl-col-2</span>
+                    <span class="example-label">lg-col-2</span>
+                    <span class="example-label">md-col-4</span>
+                    <span class="example-label">sm-col-6</span>
+                    <span class="example-label">col-12 (base)</span>
+                </div>
+
+                <div class="col col-12 sm-col-6 md-col-4 lg-col-2 xl-col-2">
+                    <span class="example-label">xl-col-2</span>
+                    <span class="example-label">lg-col-2</span>
+                    <span class="example-label">md-col-4</span>
+                    <span class="example-label">sm-col-6</span>
+                    <span class="example-label">col-12 (base)</span>
+                </div>
+
+                <div class="col col-12 sm-col-6 md-col-4 lg-col-2 xl-col-2">
+                    <span class="example-label">xl-col-2</span>
+                    <span class="example-label">lg-col-2</span>
+                    <span class="example-label">md-col-4</span>
+                    <span class="example-label">sm-col-6</span>
+                    <span class="example-label">col-12 (base)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">Semantic-based Grid</h3>
+
+<div class="example-set-description copy-meta">
+    <p>The grid can be used and layouts defined purely using Sass as well. This reduces the number of DOM elements needed to render content and styling while allowing us to choose the most appropriate and semantic HTML elements for each situation.</p>
+</div>
+
+<div class="example-set">
+    <div class="example-grid example-grid-semantic">
+        <div class="wrapper-content">
+            <main class="content-main">
+
+                <article class="story story-main">
+                    <h3 class="hd-4">Example News Story</h3>
+                    <p class="copy-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam dolorum recusandae voluptate modi laboriosam laudantium? Consequuntur, ipsam autem, eveniet pariatur consectetur qui maiores nemo asperiores omnis obcaecati debitis. Vitae.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, odio itaque, repudiandae voluptates vero velit possimus recusandae illum hic nobis doloribus assumenda laudantium. Nisi architecto eveniet, qui atque, maiores deleniti?</p>
+                </article>
+
+                <article class="story story-secondary">
+                    <h3 class="hd-5">Example News Story</h3>
+                    <p class="copy-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam dolorum recusandae voluptate modi laboriosam laudantium? Consequuntur, ipsam autem, eveniet pariatur consectetur qui maiores nemo asperiores omnis obcaecati debitis. Vitae.</p>
+                </article>
+
+                <article class="story story-secondary">
+                    <h3 class="hd-5">Example News Story</h3>
+                    <p class="copy-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam dolorum recusandae voluptate modi laboriosam laudantium? Consequuntur, ipsam autem, eveniet pariatur consectetur qui maiores nemo asperiores omnis obcaecati debitis. Vitae.</p>
+                </article>
+
+                <article class="story story-secondary">
+                    <h3 class="hd-5">Example News Story</h3>
+                    <p class="copy-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam dolorum recusandae voluptate modi laboriosam laudantium? Consequuntur, ipsam autem, eveniet pariatur consectetur qui maiores nemo asperiores omnis obcaecati debitis. Vitae.</p>
+                </article>
+
+                <article class="story story-secondary">
+                    <h3 class="hd-5">Example News Story</h3>
+                    <p class="copy-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam dolorum recusandae voluptate modi laboriosam laudantium? Consequuntur, ipsam autem, eveniet pariatur consectetur qui maiores nemo asperiores omnis obcaecati debitis. Vitae.</p>
+                </article>
+
+                <article class="story story-secondary">
+                    <h3 class="hd-5">Example News Story</h3>
+                    <p class="copy-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam dolorum recusandae voluptate modi laboriosam laudantium? Consequuntur, ipsam autem, eveniet pariatur consectetur qui maiores nemo asperiores omnis obcaecati debitis. Vitae.</p>
+                </article>
+            </main>
+
+            <aside class="content-secondary">
+                <h4 class="hd-6">See Also</h4>
+
+                <ul class="list-related copy-meta">
+                    <li class="related-item">
+                        <a href="http://ux.edx.org">Related Item</a>
+                    </li>
+                    <li class="related-item">
+                        <a href="http://ux.edx.org">Related Item</a>
+                    </li>
+                    <li class="related-item">
+                        <a href="http://ux.edx.org">Related Item</a>
+                    </li>
+                    <li class="related-item">
+                        <a href="http://ux.edx.org">Related Item</a>
+                    </li>
+                    <li class="related-item">
+                        <a href="http://ux.edx.org">Related Item</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">Semantic Gallery</h3>
+
+<div class="example-set-description copy-meta">
+    <p>Galleries are helpers that use the grid to columns and rows for homogenous content (such as photo galleries). Column count is defined at the gallery level and visual row breaks are managed automatically.</p>
+
+    <p>Like columns and rows, a gallery can be defined at the Sass level.</p>
+</div>
+
+<div class="example-set">
+    <div class="example-grid example-grid-gallery-semantic">
+        <section class="photo-gallery photo-gallery-large">
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/1000x500" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-meta">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/1000x500" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-meta">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/1000x500" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-meta">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/1000x500" alt="Puppies playing in a field" />
+               <figcaption class="photo-caption copy-meta">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/1000x500" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-meta">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/1000x500" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-meta">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+        </section>
+
+        <section class="photo-gallery">
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/500x250" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-micro">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/500x250" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-micro">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/500x250" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-micro">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/500x250" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-micro">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/500x250" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-micro">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/500x250" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-micro">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/500x250" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-micro">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/500x250" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-micro">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/500x250" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-micro">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/500x250" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-micro">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/500x250" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-micro">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+
+            <figure class="photo">
+                <img class="photo-source" src="http://placehold.it/500x250" alt="Puppies playing in a field" />
+                <figcaption class="photo-caption copy-micro">Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward</figcaption>
+            </figure>
+        </section>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">Utility Class-based Gallery</h3>
+
+<div class="example-set-description copy-meta">
+    <p>Galleries can be used via specific classes on DOM elements. Defining a gallery, its children (gallery items), and columns items should span are all available for customization.</p>
+</div>
+
+<div class="example-set">
+    <div class="example-grid example-grid-gallery-classes">
+        <div class="grid-container grid-manual">
+            <span class="example-label example-label-container">
+                <strong>Parent Classes:</strong>
+                gallery gallery-1
+            </span>
+
+            <ul class="gallery gallery-1">
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+            </ul>
+
+            <span class="example-label example-label-container">
+                <strong>Parent Classes:</strong>
+                gallery gallery-2
+            </span>
+            <ul class="gallery gallery-2">
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+            </ul>
+
+            <span class="example-label example-label-container">
+                <strong>Parent Classes:</strong>
+                gallery gallery-3
+            </span>
+            <ul class="gallery gallery-3">
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+            </ul>
+
+            <span class="example-label example-label-container">
+                <strong>Parent Classes:</strong>
+                gallery gallery-4
+            </span>
+            <ul class="gallery gallery-4">
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+            </ul>
+
+            <span class="example-label example-label-container">
+                <strong>Parent Classes:</strong>
+                gallery gallery-6
+            </span>
+            <ul class="gallery gallery-6">
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">Utility Class-based Responsive Gallery</h3>
+
+<div class="example-set-description copy-meta">
+    <p>Galleries can also be scoped to specific responsive breakpoints. Gallery utility classes on DOM elements are prefixed with one of the preset responsive breakpoints.</p>
+</div>
+
+<div class="example-set">
+    <div class="example-grid example-grid-gallery-responsive">
+        <div class="grid-container grid-manual">
+
+            <span class="example-label example-label-container">
+                <strong>Parent Classes:</strong>
+                gallery gallery-6 sm-gallery-6 md-gallery-4 lg-gallery-3
+            </span>
+            <ul class="gallery gallery-6 sm-gallery-6 md-gallery-4 lg-gallery-3">
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+                <li class="gallery-item">
+                    <span class="example-label">gallery-item</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+
+                
+                <div class="pldoc-tab pldoc-pattern-markup is-hidden" id="grid-markup" tabindex="-1">
+                    <h2 class="pldoc-heading pldoc-tab-heading pldoc-pattern-markup-title">Grid System Markup</h2>
+
+                    <div class="pldoc-tab-content">
+                        
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Basic Grid<span class="nt">&lt;/h3&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set-description copy-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>The basic grid gives you twelve columns to work with across all various breakpoints.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-grid example-grid-basic"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-first"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Col<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Col<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Col<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Col<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Col<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Col<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Col<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Col<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Col<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Col<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Col<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-last"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Col<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Basic Grid (with column shifts)<span class="nt">&lt;/h3&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set-description copy-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>The Basic Grid with column shifts allows you to create a two-column layout where there is (column-sized) space before (pre-*) or after (post-*) the content.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-grid example-grid-shifts"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"shifts-pre"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-A"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Pre 1 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-B"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Pre 2 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-C"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Pre 3 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-D"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Pre 4 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-E"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Pre 5 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-F"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Pre 6 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-G"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Pre 7 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-H"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Pre 8 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-I"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Pre 9 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-J"</span><span class="nt">&gt;</span>
+                   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Pre 10 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-K"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Pre 11 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/section&gt;</span>
+
+            <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"shifts-post"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-A"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Post 1 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-B"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Post 2 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-C"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Post 3 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-D"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Post 4 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-E"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Post 5 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-F"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Post 6 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-G"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Post 7 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-H"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Post 8 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-I"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Post 9 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-J"</span><span class="nt">&gt;</span>
+                   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Post 10 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-K"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>Post 11 Col<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/section&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Utility Class-based Grid<span class="nt">&lt;/h3&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set-description copy-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>The grid can be used via specific classes on DOM elements. Defining rows, columns, and pre/post shifting of columns are all available.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-grid example-grid-classes"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-container grid-manual"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-1"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-1"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-1"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-1"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-1"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-1"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-1"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-1"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-1"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-1"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-1"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-1"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-2"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-2<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-2"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-2<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-2"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-2<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-2"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-2<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-2"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-2<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-2"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-2<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-3"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-3<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-3"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-3<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-3"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-3<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-3"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-3<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-4"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-4<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-4"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-4<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-4"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-4<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-12"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-12<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-2 pre-5 post-5"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-2<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>pre-5<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>post-5<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-4 pre-4 post-4"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-4<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>pre-4<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>post-4<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-6 pre-3 post-3"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-6<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>pre-3<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>post-3<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-8 pre-2 post-2"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-8<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>pre-2<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>post-2<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-10 pre-1 post-1"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-10<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>pre-1<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>post-1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Utility Class-based Responsive Grid<span class="nt">&lt;/h3&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set-description copy-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Columns can also be scoped to specific responsive breakpoints. Column utility classes on DOM elements are prefixed with one of the preset responsive breakpoints.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-grid example-grid-responsive grid-container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-container grid-manual"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-12 sm-col-6 md-col-4 lg-col-2 xl-col-2"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>xl-col-2<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>lg-col-2<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>md-col-4<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>sm-col-6<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-12 (base)<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-12 sm-col-6 md-col-4 lg-col-2 xl-col-2"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>xl-col-2<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>lg-col-2<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>md-col-4<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>sm-col-6<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-12 (base)<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-12 sm-col-6 md-col-4 lg-col-2 xl-col-2"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>xl-col-2<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>lg-col-2<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>md-col-4<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>sm-col-6<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-12 (base)<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-12 sm-col-6 md-col-4 lg-col-2 xl-col-2"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>xl-col-2<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>lg-col-2<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>md-col-4<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>sm-col-6<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-12 (base)<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-12 sm-col-6 md-col-4 lg-col-2 xl-col-2"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>xl-col-2<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>lg-col-2<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>md-col-4<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>sm-col-6<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-12 (base)<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-12 sm-col-6 md-col-4 lg-col-2 xl-col-2"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>xl-col-2<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>lg-col-2<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>md-col-4<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>sm-col-6<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>col-12 (base)<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Semantic-based Grid<span class="nt">&lt;/h3&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set-description copy-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>The grid can be used and layouts defined purely using Sass as well. This reduces the number of DOM elements needed to render content and styling while allowing us to choose the most appropriate and semantic HTML elements for each situation.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-grid example-grid-semantic"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"wrapper-content"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"content-main"</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"story story-main"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-4"</span><span class="nt">&gt;</span>Example News Story<span class="nt">&lt;/h3&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-large"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam dolorum recusandae voluptate modi laboriosam laudantium? Consequuntur, ipsam autem, eveniet pariatur consectetur qui maiores nemo asperiores omnis obcaecati debitis. Vitae.<span class="nt">&lt;/p&gt;</span>
+
+                    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, odio itaque, repudiandae voluptates vero velit possimus recusandae illum hic nobis doloribus assumenda laudantium. Nisi architecto eveniet, qui atque, maiores deleniti?<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/article&gt;</span>
+
+                <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"story story-secondary"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-5"</span><span class="nt">&gt;</span>Example News Story<span class="nt">&lt;/h3&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-base"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam dolorum recusandae voluptate modi laboriosam laudantium? Consequuntur, ipsam autem, eveniet pariatur consectetur qui maiores nemo asperiores omnis obcaecati debitis. Vitae.<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/article&gt;</span>
+
+                <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"story story-secondary"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-5"</span><span class="nt">&gt;</span>Example News Story<span class="nt">&lt;/h3&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-base"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam dolorum recusandae voluptate modi laboriosam laudantium? Consequuntur, ipsam autem, eveniet pariatur consectetur qui maiores nemo asperiores omnis obcaecati debitis. Vitae.<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/article&gt;</span>
+
+                <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"story story-secondary"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-5"</span><span class="nt">&gt;</span>Example News Story<span class="nt">&lt;/h3&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-base"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam dolorum recusandae voluptate modi laboriosam laudantium? Consequuntur, ipsam autem, eveniet pariatur consectetur qui maiores nemo asperiores omnis obcaecati debitis. Vitae.<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/article&gt;</span>
+
+                <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"story story-secondary"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-5"</span><span class="nt">&gt;</span>Example News Story<span class="nt">&lt;/h3&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-base"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam dolorum recusandae voluptate modi laboriosam laudantium? Consequuntur, ipsam autem, eveniet pariatur consectetur qui maiores nemo asperiores omnis obcaecati debitis. Vitae.<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/article&gt;</span>
+
+                <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"story story-secondary"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-5"</span><span class="nt">&gt;</span>Example News Story<span class="nt">&lt;/h3&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-base"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam dolorum recusandae voluptate modi laboriosam laudantium? Consequuntur, ipsam autem, eveniet pariatur consectetur qui maiores nemo asperiores omnis obcaecati debitis. Vitae.<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/article&gt;</span>
+            <span class="nt">&lt;/main&gt;</span>
+
+            <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"content-secondary"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd-6"</span><span class="nt">&gt;</span>See Also<span class="nt">&lt;/h4&gt;</span>
+
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-related copy-meta"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"related-item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://ux.edx.org"</span><span class="nt">&gt;</span>Related Item<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"related-item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://ux.edx.org"</span><span class="nt">&gt;</span>Related Item<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"related-item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://ux.edx.org"</span><span class="nt">&gt;</span>Related Item<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"related-item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://ux.edx.org"</span><span class="nt">&gt;</span>Related Item<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"related-item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://ux.edx.org"</span><span class="nt">&gt;</span>Related Item<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/aside&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Semantic Gallery<span class="nt">&lt;/h3&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set-description copy-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Galleries are helpers that use the grid to columns and rows for homogenous content (such as photo galleries). Column count is defined at the gallery level and visual row breaks are managed automatically.<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>Like columns and rows, a gallery can be defined at the Sass level.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-grid example-grid-gallery-semantic"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"photo-gallery photo-gallery-large"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/1000x500"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-meta"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/1000x500"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-meta"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/1000x500"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-meta"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/1000x500"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+               <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-meta"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/1000x500"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-meta"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/1000x500"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-meta"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+        <span class="nt">&lt;/section&gt;</span>
+
+        <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"photo-gallery"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/500x250"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-micro"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/500x250"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-micro"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/500x250"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-micro"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/500x250"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-micro"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/500x250"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-micro"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/500x250"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-micro"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/500x250"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-micro"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/500x250"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-micro"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/500x250"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-micro"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/500x250"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-micro"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/500x250"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-micro"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"photo"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"photo-source"</span> <span class="na">src=</span><span class="s">"http://placehold.it/500x250"</span> <span class="na">alt=</span><span class="s">"Puppies playing in a field"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"photo-caption copy-micro"</span><span class="nt">&gt;</span>Wobbled this darn and warthog compatibly that smoothly tediously ashamed while grouped around tangibly inanimately unkindly wailed awkward<span class="nt">&lt;/figcaption&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+        <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Utility Class-based Gallery<span class="nt">&lt;/h3&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set-description copy-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Galleries can be used via specific classes on DOM elements. Defining a gallery, its children (gallery items), and columns items should span are all available for customization.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-grid example-grid-gallery-classes"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-container grid-manual"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label example-label-container"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;strong&gt;</span>Parent Classes:<span class="nt">&lt;/strong&gt;</span>
+                gallery gallery-1
+            <span class="nt">&lt;/span&gt;</span>
+
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"gallery gallery-1"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label example-label-container"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;strong&gt;</span>Parent Classes:<span class="nt">&lt;/strong&gt;</span>
+                gallery gallery-2
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"gallery gallery-2"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label example-label-container"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;strong&gt;</span>Parent Classes:<span class="nt">&lt;/strong&gt;</span>
+                gallery gallery-3
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"gallery gallery-3"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label example-label-container"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;strong&gt;</span>Parent Classes:<span class="nt">&lt;/strong&gt;</span>
+                gallery gallery-4
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"gallery gallery-4"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label example-label-container"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;strong&gt;</span>Parent Classes:<span class="nt">&lt;/strong&gt;</span>
+                gallery gallery-6
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"gallery gallery-6"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Utility Class-based Responsive Gallery<span class="nt">&lt;/h3&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set-description copy-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Galleries can also be scoped to specific responsive breakpoints. Gallery utility classes on DOM elements are prefixed with one of the preset responsive breakpoints.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-grid example-grid-gallery-responsive"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-container grid-manual"</span><span class="nt">&gt;</span>
+
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label example-label-container"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;strong&gt;</span>Parent Classes:<span class="nt">&lt;/strong&gt;</span>
+                gallery gallery-6 sm-gallery-6 md-gallery-4 lg-gallery-3
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"gallery gallery-6 sm-gallery-6 md-gallery-4 lg-gallery-3"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"gallery-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"example-label"</span><span class="nt">&gt;</span>gallery-item<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+                    </div>
+                </div>
+
+                <div class="pldoc-tab pldoc-pattern-styling is-hidden" id="grid-styling" tabindex="-1">
+                    <h2 class="pldoc-heading pldoc-tab-heading pldoc-pattern-styling-title">Grid System Style</h2>
+
+                    <div class="pldoc-tab-content">
+                        <p class="copy-base">View <a class="pldoc-link" href="https://github.com/edx/ux-pattern-library/blob/master/pattern-library/sass/patterns/_grid.scss">the original source of the CSS as SCSS</a> in this project's repo.</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </article>
+</section>
+
+
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <div class="pldoc-wrapper-footer-site">
+    <footer class="pldoc-footer-site">
+        <div class="pldoc-footer-site-copyright">
+            <p class="pldoc-copy copy-micro">
+                Copyright &copy; <time datetime="2016-05-05T10:29:16-04:00">2016</time> edX.
+            </p>
+            <p class="pldoc-copy copy-micro">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+            </p>
+            <p class="pldoc-copy copy-micro">
+                These works by <a xmlns:cc="http://creativecommons.org/ns#" href="http://open.edx.org" property="cc:attributionName" rel="cc:attributionURL">edX Inc.</a>
+                are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+        </div>
+    </footer>
+</div>
+
+    </div>
+
+    <script src="/public/pattern-library.js"></script>
+
+</body>
+</html>
+

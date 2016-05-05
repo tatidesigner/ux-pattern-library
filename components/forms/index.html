@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <base href="/">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>
+        
+        Forms &middot; edX Pattern Library
+        
+    </title>
+
+    <meta name="description" content="The Visual, UI, and Front End styleguide for edX's applications">
+
+    <link rel="stylesheet" href="/public/css/main-ltr.css">
+
+</head>
+
+
+<body class="pldoc view-">
+    <div class="pldoc-nav-skip sr-only">
+        <a class="pldoc-action-skip" href="#content-main">Skip to the main content</a>
+    </div>
+
+    <hr class="pldoc-divider sr-only">
+
+    <div class="pldoc-wrapper-view">
+        <div class="pldoc-wrapper-header-site">
+    <header class="pldoc-header-site" role="banner" aria-labelledby="pldoc-header-site-title">
+        <div class="pldoc-header-main">
+            <h1 class="hd-2 de-emphasized pldoc-header-site-title">
+                <a href="/">
+                    <img class="pldoc-header-logo" src="/./public/images/edx-logo.svg"
+                         alt="edX Pattern Library home" />
+                    <span>Pattern Library</span>
+                </a>
+            </h1>
+        </div>
+    </header>
+</div>
+
+
+        <div class="pldoc-wrapper-content" id="content-top" tabindex="-1">
+            <div class="pldoc-content">
+                <div class="pldoc-wrapper-content-supplemental">
+                    <nav class="pldoc-nav pldoc-nav-internal" role="navigation" aria-label="edX Pattern Library">
+    <h2 class="pldoc-heading pldoc-nav-title hd-6">edX Pattern Library</h2>
+    <ul class="list-unstyled list-patterns">
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./">
+    
+    Introduction
+    
+        </a>
+    
+</li>
+
+    </ul>
+</nav>
+
+
+<nav class="pldoc-nav pldoc-nav-internal" role="navigation" aria-label="Design Elements">
+    <h2 class="pldoc-heading pldoc-nav-title hd-6">Design Elements</h2>
+    <ul class="list-unstyled list-patterns">
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/colors/">
+    
+    Colors
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/copy/">
+    
+    Copy
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/grid/">
+    
+    Grid System
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/headings/">
+    
+    Headings
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/icons/">
+    
+    Icons
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/layouts/">
+    
+    Layouts
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/depth/">
+    
+    UI Depth
+    
+        </a>
+    
+</li>
+
+    
+    </ul>
+</nav>
+
+
+
+<nav class="pldoc-nav pldoc-nav-internal" role="navigation" aria-label="Components">
+    <h2 class="pldoc-heading pldoc-nav-title hd-6">Components</h2>
+    <ul class="list-unstyled list-patterns">
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/alerts/">
+    
+    Alerts
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/buttons/">
+    
+    Buttons
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/dropdown-menu/">
+    
+    Dropdown Menu
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent is-current">
+    
+    Forms
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/lists/">
+    
+    Lists
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/tables/">
+    
+    Tables
+    
+        </a>
+    
+</li>
+
+    
+    </ul>
+</nav>
+
+
+                </div>
+
+                <hr class="pldoc-divider sr-only">
+
+                <div class="pldoc-wrapper-content-main">
+                    <main class="pldoc-content-main" id="content-main" aria-label="Content">
+                        
+
+
+<section class="pldoc-wrapper-pattern">
+    <article class="pldoc-pattern pldoc-pattern-forms" id="forms" tabindex="-1" aria-label="forms">
+
+        <header class="pldoc-pattern-header">
+            <h1 class="pldoc-heading pldoc-pattern-title hd-4">Forms</h1>
+
+            <ul class="list-inline pldoc-pattern-meta copy-micro de-emphasized">
+                
+                
+                <li class="item meta meta-doclink">
+                    <a class="pldoc-link" href="https://github.com/edx/ux-pattern-library/wiki/Styleguide:-Forms"><span class="sr-only">View </span>Documentation</a>
+                </li>
+                
+            </ul>
+        </header>
+
+        <div class="pldoc-pattern-info">
+            <p class="copy-base">Forms allow users to interact with the interface, set preferences, and enter any necessary personal information. They also form the base of individual exercises within each class. The examples below demonstrate how to use each type of form control and provides any applicable display options. Note the markup in each case to get a sense of semantics and structure.</p>
+        </div>
+
+        
+
+        <div class="pldoc-tab-wrapper">
+            
+            <ul class="pldoc-tab-labels pldoc-pattern-navigation">
+                <li class="pldoc-tab-label">
+                    <button class="pldoc-link pldoc-link-preview is-active" data-href="#forms-preview">Preview</button>
+                </li>
+                <li class="pldoc-tab-label">
+                    <button class="pldoc-link pldoc-link-markup" data-href="#forms-markup">Markup</button>
+                </li>
+                
+                
+                <li class="pldoc-tab-label">
+                    <button class="pldoc-link pldoc-link-styling" data-href="#forms-styling">Styling</button>
+                </li>
+                
+            </ul>
+            
+
+            <div class="pldoc-tabs">
+                <div class="pldoc-tab pldoc-pattern-preview is-active" id="forms-preview" tabindex="-1">
+                    <h2 class="pldoc-heading pldoc-tab-heading pldoc-pattern-preview-title">Forms Preview</h2>
+
+                    <div class="pldoc-tab-content">
+                        
+
+                        <h4 class="hd-6 example-set-hd">Text inputs</h4>
+<div class="example-set">
+    <form class="form">
+        <fieldset class="form-group">
+            <legend class="form-group-hd sr-only">Personal Details</legend>
+            <div class="field">
+                <label class="field-label" for="full-name-default">Your name (default text field)</label>
+                <input class="field-input input-text" type="text" id="full-name-default" name="full-name-default" placeholder="e.g. Jane Doe" aria-describedby="full-name-default-hint" />
+                <div class="field-hint" id="full-name-default-hint">
+                    <p>Example: Jane Doe</p>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label" for="email-address-default-01">Email address (default, disabled text field)</label>
+                <input class="field-input input-text" type="email" id="email-address-default-01" name="email-address-default-01" placeholder="e.g. jane@email.com" aria-describedby="email-address-default-01-hint" disabled="" />
+                <div class="field-hint" id="email-address-default-01-hint">
+                    <p>Example: jane@email.com</p>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label field-required" for="email-address-default-helper">Email address (default, required text field with hint text)</label>
+                <input class="field-input input-text" type="email" id="email-address-default-helper" name="email-address-default-hint" placeholder="e.g. jane@email.com" aria-describedby="email-address-default-hint" required="" />
+                <div class="field-hint" id="email-address-default-hint">
+                    <p>Your email address will never be shared. We promise.</p>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label field-required" for="email-address-default-error-hint">Email address (default, has error)</label>
+                <input class="field-input input-text has-error" type="email" id="email-address-default-error-hint" name="email-address-default-error-hint" placeholder="e.g. jane@email.com" value="jane@domain" required="" />
+                <div class="field-message has-error">
+                    <span class="field-message-content">
+                        You must provide a valid, properly-formed email address.
+                    </span>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label field-required" for="email-address-default-succuess-helper">Email address (default, has success)</label>
+                <input class="field-input input-text has-success" type="email" id="email-address-default-succuess-helper" name="email-address-default-succuess-hint" placeholder="e.g. jane@email.com" value="jane@domain.com" aria-describedby="email-address-default-succuess-hint" required="" />
+                <div class="field-hint" id="email-address-default-succuess-hint">
+                    <p>Your email address will never be shared. We promise.</p>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label" for="full-name-simple">Your name (simple text field)</label>
+                <input class="field-input input-text input-alt" type="text" id="full-name-simple" name="full-name-simple" placeholder="e.g. Jane Doe" aria-describedby="full-name-simple-hint" required="" />
+                <div class="field-hint" id="full-name-simple-hint">
+                    <p>Example: Jane Doe</p>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label" for="full-name-simple-error">Your name (simple text field, error)</label>
+                <input class="field-input input-text input-alt has-error" type="text" id="full-name-simple-error" name="full-name-simple-error" placeholder="e.g. Jane Doe" value="JD" required="" />
+                <div class="field-message has-error">
+                    <span class="field-message-content">
+                        You must provide your real name.
+                    </span>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label" for="full-name-simple-success">Your name (simple text field, success)</label>
+                <input class="field-input input-text input-alt has-success" type="text" id="full-name-simple-success" name="full-name-simple-success" placeholder="e.g. Jane Doe" value="Jane Doe" required="" />
+            </div>
+            <div class="field">
+                <label class="field-label" for="full-name-simple-disabled">Your name (disabled simple text field)</label>
+                <input class="field-input input-text input-alt" type="text" id="full-name-simple-disabled" name="full-name-simple-disabled" placeholder="e.g. Jane Doe" required="" disabled="" />
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<h4 class="hd-6 example-set-hd">Search</h4>
+<div class="example-set">
+    <form class="form">
+        <fieldset class="form-group">
+            <legend class="form-group-hd sr-only">Search examples</legend>
+            <div class="field">
+                <label class="field-label" for="search-01">Search (with visible label)</label>
+                <input class="field-input input-text" type="search" id="search-01" name="search-01" placeholder="Search this website" />
+                <button class="btn-brand btn-small" type="button">Search</button>
+            </div>
+            <div class="field">
+                <label class="field-label sr-only" for="search-02">Search</label>
+                <input class="field-input input-text" type="search" id="search-02" name="search-02" placeholder="Search this website" aria-describedby="search-02-hint" />
+                <button class="btn-brand btn-small" type="button">Search</button>
+                <div class="field-hint" id="search-02-hint">
+                    <p>(This field has a label that's hidden yet still accessible.)</p>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label" for="search-03">Search (with visible label and icon)</label>
+                <input class="field-input input-text" type="search" id="search-03" name="search-03" placeholder="Search this website" />
+                <button class="btn-brand btn-small" type="button">
+                    <span class="icon icon-search" aria-hidden="true"></span>
+                    <span class="sr-only">Search</span>
+                </button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<h4 class="hd-6 example-set-hd">Telephone number</h4>
+<div class="example-set">
+    <form class="form">
+        <fieldset class="form-group">
+            <legend class="form-group-hd sr-only">Telephone number examples</legend>
+            <div class="field">
+                <label class="field-label" for="tel-01">Phone number (with visible label)</label>
+                <input class="field-input input-text" type="tel" id="tel-01" name="tel-01" placeholder="800-555-1515" aria-describedby="tel-01-hint" />
+                <div class="field-hint" id="tel-01-hint">
+                    <p>Example: 800-555-1515</p>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<h4 class="hd-6 example-set-hd">Select Menus</h4>
+<div class="example-set">
+    <form class="form">
+        <fieldset class="form-group">
+            <legend class="form-group-hd sr-only">Examples of various select menus</legend>
+            <div class="field">
+                <label class="field-label" for="select-01">Choose your favorite color of the rainbow (default select menu)</label>
+                <select class="field-input input-select" id="select-01" name="select-01">
+                    <option value="">- Choose one -</option>
+                    <option value="Red">Red</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Indigo">Indigo</option>
+                    <option value="Violet">Violet</option>
+                </select>
+            </div>
+            <div class="field">
+                <label class="field-label" for="select-01-error">Choose your favorite color of the rainbow (default select menu with error)</label>
+                <select class="field-input input-select has-error" id="select-01-error" name="select-01-error">
+                    <option value="">- Choose one -</option>
+                    <option value="Red">Red</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Indigo">Indigo</option>
+                    <option value="Violet">Violet</option>
+                </select>
+                <div class="field-message has-error">
+                    <span class="field-message-content">
+                        You must select your favorite color.
+                    </span>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label" for="select-01-success">Choose your favorite color of the rainbow (default select menu with valid selection)</label>
+                <select class="field-input input-select has-success" name="select-01-success" id="select-01-success">
+                    <option value="">- Choose one -</option>
+                    <option value="Red">Red</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue" selected="selected">Blue</option>
+                    <option value="Indigo">Indigo</option>
+                    <option value="Violet">Violet</option>
+                </select>
+            </div>
+            <div class="field">
+                <label class="field-label" for="select-01-succuess-disabled">Choose your favorite color of the rainbow (default disabled select menu)</label>
+                <select class="field-input input-select" id="select-01-succuess-disabled" name="select-01-succuess-disabled" disabled="">
+                    <option value="">- Choose one -</option>
+                    <option value="Red">Red</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Indigo">Indigo</option>
+                    <option value="Violet">Violet</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label class="field-label" for="select-02">Choose your favorite color of the rainbow (enhanced select menu)</label>
+                <select class="field-input input-select replace-select" id="select-02" name="select-02">
+                    <option value="">- Choose one -</option>
+                    <option value="Red">Red</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Indigo">Indigo</option>
+                    <option value="Violet">Violet</option>
+                </select>
+            </div>
+            <div class="field">
+                <label class="field-label" for="select-02-error">Choose your favorite color of the rainbow (enhanced select menu with error)</label>
+                <select class="field-input input-select replace-select has-error" id="select-02-error" name="select-02-error">
+                    <option value="">- Choose one -</option>
+                    <option value="Red">Red</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Indigo">Indigo</option>
+                    <option value="Violet">Violet</option>
+                </select>
+                <div class="field-message has-error">
+                    <span class="field-message-content">
+                        You must select your favorite color.
+                    </span>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label" for="select-02-success">Choose your favorite color of the rainbow (enhanced select menu with valid selection)</label>
+                <select class="field-input input-select replace-select has-success" id="select-02-success" name="select-02-success">
+                    <option value="">- Choose one -</option>
+                    <option value="Red">Red</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue" selected="selected">Blue</option>
+                    <option value="Indigo">Indigo</option>
+                    <option value="Violet">Violet</option>
+                </select>
+            </div>
+            <div class="field">
+                <label class="field-label" for="select-02-disabled">Choose your favorite color of the rainbow (enhanced select and disabled menu)</label>
+                <select class="field-input input-select replace-select" id="select-02-disabled" name="select-02-disabled" disabled="">
+                    <option value="">- Choose one -</option>
+                    <option value="Red">Red</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Indigo">Indigo</option>
+                    <option value="Violet">Violet</option>
+                </select>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<h4 class="hd-6 example-set-hd">Radios</h4>
+<div class="example-set">
+    <form class="form">
+        <fieldset class="field-group">
+            <legend class="field-group-hd field-label">How would you prefer to be contacted? (default radio buttons)</legend>
+            <div class="field">
+                <label class="field-label label-inline" for="updates-mobile-text-01">
+                    <input type="radio" class="field-input input-radio" id="updates-mobile-text-01" name="updates-notifications-01" value="Mobile text messages" aria-describedby="updates-mobile-text-01-hint" checked="" />
+                    <span class="field-input-label">Text messages on my mobile phone</span>
+                </label>
+                <div class="field-hint" id="updates-mobile-text-01-hint">Rates apply. Please consult your plan.</div>
+            </div>
+            <div class="field">
+                <label class="field-label label-inline" for="updates-email-01">
+                    <input type="radio" class="field-input input-radio" id="updates-email-01" name="updates-notifications-01" value="Email messages" aria-describedby="updates-email-01-hint" />
+                    <span class="field-input-label">Email at matttracker@gmail.com</span>
+                </label>
+                <div class="field-hint" id="updates-email-01-hint">We will never spam you. Pinky swear.</div>
+            </div>
+            <div class="field">
+                <input type="radio" class="field-input input-radio" id="updates-email-04" name="updates-notifications-01" value="Snail mail" />
+                <label class="field-label label-inline" for="updates-email-04">
+                    <span class="field-input-label">Please send me a handwritten letter (unnested label and input)</span>
+                </label>
+            </div>
+            <div class="field">
+                <label class="field-label label-inline" for="updates-email-05">
+                    <input type="radio" class="field-input input-radio" id="updates-email-05" name="updates-notifications-01" value="Email messages" disabled="" />
+                    <span class="field-input-label">Never contact me (disabled radio button)</span>
+                </label>
+            </div>
+        </fieldset>
+        <fieldset class="field-group">
+            <legend class="field-group-hd field-label">How would you prefer to be contacted? (enhanced radio buttons)</legend>
+            <div class="field">
+                <label class="field-label label-inline" for="updates-mobile-text-02">
+                    <input type="radio" class="field-input input-radio replace-radio" id="updates-mobile-text-02" name="updates-notifications-02" value="Mobile text messages" aria-describedby="updates-mobile-text-02-hint" checked="" />
+                    <span class="field-input-label">Text messages on my mobile phone</span>
+                </label>
+                <div class="field-hint" id="updates-mobile-text-02-hint">Rates apply. Pelase consult your plan.</div>
+            </div>
+            <div class="field">
+                <label class="field-label label-inline" for="updates-email-02">
+                    <input type="radio" class="field-input input-radio replace-radio" id="updates-email-02" name="updates-notifications-02" value="Email messages" aria-describedby="updates-email-02-hint" />
+                    <span class="field-input-label">Email at matttracker@gmail.com</span>
+                </label>
+                <div class="field-hint" id="updates-email-02-hint">We will never spam you. Pinky swear.</div>
+            </div>
+            <div class="field">
+                <label class="field-label label-inline" for="updates-email-06">
+                    <input type="radio" class="field-input input-radio replace-radio" id="updates-email-06" name="updates-notifications-02" value="Email messages" disabled="" />
+                    <span class="field-input-label">Never contact me (disabled radio button)</span>
+                </label>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<h4 class="hd-6 example-set-hd">Checkboxes</h4>
+<div class="example-set">
+    <form class="form">
+        <fieldset class="field-group">
+            <legend class="field-group-hd field-label">Select your favorite pizza toppings (default checkboxes)</legend>
+            <div class="field">
+                <label class="field-label label-inline" for="checkbox-01">
+                    <input type="checkbox" class="field-input input-checkbox" id="checkbox-01" name="checkboxes-01" value="Pepperoni" checked="" />
+                    <span class="field-input-label">Pepperoni</span>
+                </label>
+            </div>
+            <div class="field">
+                <label class="field-label label-inline" for="checkbox-02">
+                    <input type="checkbox" class="field-input input-checkbox" id="checkbox-02" name="checkboxes-01" value="Sausage" />
+                    <span class="field-input-label">Sausage</span>
+                </label>
+            </div>
+            <div class="field">
+                <label class="field-label label-inline" for="checkbox-03">
+                    <input type="checkbox" class="field-input input-checkbox" id="checkbox-03" name="checkboxes-01" value="Cheese" checked="" />
+                    <span class="field-input-label">Cheese</span>
+                </label>
+            </div>
+            <div class="field">
+                <label class="field-label label-inline" for="checkbox-04">
+                    <input type="checkbox" class="field-input input-checkbox" id="checkbox-04" name="checkboxes-01" value="Sauce" disabled="" />
+                    <span class="field-input-label">Sauce (disabled checkbox)</span>
+                </label>
+            </div>
+        </fieldset>
+        <fieldset class="field-group">
+            <legend class="field-group-hd field-label">What is your favorite cereal? (enhanced checkboxes)</legend>
+            <div class="field">
+                <label class="field-label label-inline" for="checkbox-05">
+                    <input type="checkbox" class="field-input input-checkbox replace-checkbox" id="checkbox-05" name="checkboxes-02" value="Cinnamon Toast Crunch" checked="" />
+                    <span class="field-input-label">Cinnamon Toast Crunch</span>
+                </label>
+            </div>
+            <div class="field">
+                <label class="field-label label-inline" for="checkbox-06">
+                    <input type="checkbox" class="field-input input-checkbox replace-checkbox" id="checkbox-06" name="checkboxes-02" value="Peanut Butter Cap'n Crunch" />
+                    <span class="field-input-label">Peanut Butter Cap'n Crunch</span>
+                </label>
+            </div>
+            <div class="field">
+                <label class="field-label label-inline" for="checkbox-07">
+                    <input type="checkbox" class="field-input input-checkbox replace-checkbox" id="checkbox-07" name="checkboxes-02" value="Cookie Crisp" checked="" />
+                    <span class="field-input-label">Cookie Crisp</span>
+                </label>
+            </div>
+            <div class="field">
+                <label class="field-label label-inline" for="checkbox-08">
+                    <input type="checkbox" class="field-input input-checkbox replace-checkbox" id="checkbox-08" name="checkboxes-02" value="Cheerios" disabled="" />
+                    <span class="field-input-label">Cheerios (disabled enhanced checkbox)</span>
+                </label>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<h4 class="hd-6 example-set-hd">Textareas</h4>
+<div class="example-set">
+    <form class="form">
+        <fieldset class="form-group">
+            <legend class="form-group-hd sr-only">Examples of textareas</legend>
+            <div class="field">
+                <label class="field-label" for="textarea-01">Create a haiku (short textarea)</label>
+                <textarea class="field-textarea input-textarea textarea-short" id="textarea-01" name="textarea-01"></textarea>
+            </div>
+            <div class="field">
+                <label class="field-label" for="textarea-01-error">Create a haiku (short textarea with error)</label>
+                <textarea class="field-textarea input-textarea textarea-short has-error" id="textarea-01-error" name="textarea-01-error"></textarea>
+                <div class="field-message has-error">
+                    <span class="field-message-content">
+                        You must provide your real name.
+                    </span>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label" for="textarea-01-success">Create a haiku (short textarea with valid entry)</label>
+                <textarea class="field-textarea input-textarea textarea-short has-success" id="textarea-01-success" name="textarea-01-success"></textarea>
+            </div>
+            <div class="field">
+                <label class="field-label" for="textarea-02">Tell us a little about yourself (base textarea)</label>
+                <textarea class="field-textarea input-textarea textarea-medium" id="textarea-02" name="textarea-02"></textarea>
+            </div>
+            <div class="field">
+                <label class="field-label" for="textarea-03">Tell us a little more about yourself (tall textarea)</label>
+                <textarea class="field-textarea input-textarea textarea-tall" id="textarea-03" name="textarea-03"></textarea>
+            </div>
+            <div class="field">
+                <label class="field-label" for="textarea-04">Tell us your favorite story from when you were a child (block textarea)</label>
+                <textarea class="field-textarea input-textarea textarea-medium textarea-block" id="textarea-04" name="textarea-04"></textarea>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<h4 class="hd-6 example-set-hd">Sliders</h4>
+<div class="example-set">
+    <div class="form">
+        <div class="form-group">
+            <div class="field">
+                <label class="field-label" for="slider-01">How much to the max would you like to take it?</label>
+                <input type="range" class="input-slider" id="slider-01" name="slider-01" min="1" max="12" step="1" value="6" role="slider" aria-valuemin="1" aria-valuemax="12" aria-valuenow="6" />
+            </div>
+        </div>
+    
+</div>
+
+<h4 class="hd-6 example-set-hd">Progress bars</h4>
+<div class="example-set">
+    <form class="form">
+        <div class="form-group">
+            <div class="field">
+                <label class="field-label" for="progress-01">You're doing great! Keep it up!</label>
+                <progress class="input-progress" id="progress-01" name="progress-01" role="progressbar" value="50" max="100" aria-valuenow="50" aria-valuemax="100"></progress>
+            </div>
+        </div>
+    </form>
+</div>
+
+<h4 class="hd-6 example-set-hd">Example form</h4>
+<div class="example-set">
+    <form class="form">
+        <h5 class="hd-5">Create an account</h5>
+        <p class="copy-base">Before you can continue with ACME learning, you'll need to create an account with us. They're free and we don't spam you with ACMESpam.</p>
+        <fieldset class="form-group">
+            <legend class="form-group-hd">Required information</legend>
+            <div class="field">
+                <label class="field-label field-required" for="first-name">First name</label>
+                <input class="field-input input-text" type="text" id="first-name" name="first-name" aria-describedby="first-name-hint" placeholder="Jane" required="" />
+                <div class="field-hint" id="first-name-hint">
+                    <p>This allows us to personalize your experience.</p>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label field-required" for="last-name">Last name</label>
+                <input class="field-input input-text" type="text" id="last-name" name="last-name" placeholder="Doe" required="" />
+            </div>
+            <div class="field">
+                <label class="field-label field-required" for="email-address">Email</label>
+                <input class="field-input input-text" type="email" id="email-address" name="email-address" placeholder="username@domain.com" aria-describedby="email-address-hint" required="" />
+                <div class="field-hint" id="email-address-hint">
+                    <p>Example: username@domain.com</p>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label field-required" for="phone-number">Phone number</label>
+                <input class="field-input input-text" type="tel" id="phone-number" name="phone-number" placeholder="800-555-1515" aria-describedby="phone-number-hint" required="" />
+                <div class="field-hint" id="phone-number-hint">
+                    <p>Example: 800-555-1515</p>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label field-required" for="username">Username</label>
+                <input class="field-input input-text" type="text" id="username" name="username" aria-describedby="username-hint" placeholder="JaneDoe" required="" />
+                <div class="field-hint" id="username-hint">
+                    <p>You'll log in with this for future visits.</p>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label field-required" for="password-01">Password</label>
+                <input class="field-input input-text" type="password" id="password-01" name="password-01" required="" />
+            </div>
+            <div class="field">
+                <label class="field-label field-required" for="password-02">Type your password again</label>
+                <input class="field-input input-text" type="password" id="password-02" name="password-02" required="" />
+            </div>
+        </fieldset>
+        <fieldset class="form-group">
+            <legend class="form-group-hd">Additional and optional information</legend>
+            <div class="field">
+                <label class="field-label" for="gender">Gender</label>
+                <select class="field-input input-select replace-select" id="gender" name="gender">
+                    <option value="">--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="field">
+                <label class="field-label" for="dob">Year of birth</label>
+                <select class="field-input input-select replace-select" id="dob" name="dob">
+                    <option value="">--</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                </select>
+            </div>
+            <div class="field">
+                <label class="field-label" for="education">Highest level of education completed</label>
+                <select class="field-input input-select replace-select" id="education" name="education">
+                    <option value="">--</option>
+                    <option value="Doctorate">Doctorate</option>
+                    <option value="Master's or professional degree">Master's or professional degree</option>
+                    <option value="Bachelor's degree">Bachelor's degree</option>
+                    <option value="Associates's degree">Associates's degree</option>
+                    <option value="Secondary/High School">Secondary/High School</option>
+                    <option value="None">None</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="field">
+                <label class="field-label" for="mailing-address">Mailing address</label>
+                <textarea class="field-textarea input-textarea textarea-short" id="mailing-address" name="mailing-address" aria-describedby="mailing-address-hint"></textarea>
+                <div class="field-hint" id="mailing-address-hint">
+                    <p>Where you'll be receiving your ACME packages.</p>
+                </div>
+            </div>
+            <div class="field">
+                <label class="field-label label-inline field-required" for="agree-to-terms">
+                    <input type="checkbox" class="field-input input-checkbox replace-checkbox" id="agree-to-terms" name="agree-to-terms" value="I agree to the terms and conditions." required="" />
+                    <span class="field-input-label">I agree to the ACME <a href="http://ux.edx.org">Terms and Conditions</a></span>
+                </label>
+            </div>
+        </fieldset>
+        <div class="form-actions">
+            <button class="btn-brand btn-base" type="button">Create account</button>
+            <button class="btn-brand btn-base" type="button">Cancel registration</button>
+        </div>
+    </form>
+</div>
+</div>
+
+                    </div>
+                </div>
+
+                
+                <div class="pldoc-tab pldoc-pattern-markup is-hidden" id="forms-markup" tabindex="-1">
+                    <h2 class="pldoc-heading pldoc-tab-heading pldoc-pattern-markup-title">Forms Markup</h2>
+
+                    <div class="pldoc-tab-content">
+                        
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Text inputs<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"form-group-hd sr-only"</span><span class="nt">&gt;</span>Personal Details<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"full-name-default"</span><span class="nt">&gt;</span>Your name (default text field)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"full-name-default"</span> <span class="na">name=</span><span class="s">"full-name-default"</span> <span class="na">placeholder=</span><span class="s">"e.g. Jane Doe"</span> <span class="na">aria-describedby=</span><span class="s">"full-name-default-hint"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"full-name-default-hint"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>Example: Jane Doe<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"email-address-default-01"</span><span class="nt">&gt;</span>Email address (default, disabled text field)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text"</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"email-address-default-01"</span> <span class="na">name=</span><span class="s">"email-address-default-01"</span> <span class="na">placeholder=</span><span class="s">"e.g. jane@email.com"</span> <span class="na">aria-describedby=</span><span class="s">"email-address-default-01-hint"</span> <span class="na">disabled=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"email-address-default-01-hint"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>Example: jane@email.com<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label field-required"</span> <span class="na">for=</span><span class="s">"email-address-default-helper"</span><span class="nt">&gt;</span>Email address (default, required text field with hint text)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text"</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"email-address-default-helper"</span> <span class="na">name=</span><span class="s">"email-address-default-hint"</span> <span class="na">placeholder=</span><span class="s">"e.g. jane@email.com"</span> <span class="na">aria-describedby=</span><span class="s">"email-address-default-hint"</span> <span class="na">required=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"email-address-default-hint"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>Your email address will never be shared. We promise.<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label field-required"</span> <span class="na">for=</span><span class="s">"email-address-default-error-hint"</span><span class="nt">&gt;</span>Email address (default, has error)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text has-error"</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"email-address-default-error-hint"</span> <span class="na">name=</span><span class="s">"email-address-default-error-hint"</span> <span class="na">placeholder=</span><span class="s">"e.g. jane@email.com"</span> <span class="na">value=</span><span class="s">"jane@domain"</span> <span class="na">required=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-message has-error"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-message-content"</span><span class="nt">&gt;</span>
+                        You must provide a valid, properly-formed email address.
+                    <span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label field-required"</span> <span class="na">for=</span><span class="s">"email-address-default-succuess-helper"</span><span class="nt">&gt;</span>Email address (default, has success)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text has-success"</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"email-address-default-succuess-helper"</span> <span class="na">name=</span><span class="s">"email-address-default-succuess-hint"</span> <span class="na">placeholder=</span><span class="s">"e.g. jane@email.com"</span> <span class="na">value=</span><span class="s">"jane@domain.com"</span> <span class="na">aria-describedby=</span><span class="s">"email-address-default-succuess-hint"</span> <span class="na">required=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"email-address-default-succuess-hint"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>Your email address will never be shared. We promise.<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"full-name-simple"</span><span class="nt">&gt;</span>Your name (simple text field)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text input-alt"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"full-name-simple"</span> <span class="na">name=</span><span class="s">"full-name-simple"</span> <span class="na">placeholder=</span><span class="s">"e.g. Jane Doe"</span> <span class="na">aria-describedby=</span><span class="s">"full-name-simple-hint"</span> <span class="na">required=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"full-name-simple-hint"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>Example: Jane Doe<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"full-name-simple-error"</span><span class="nt">&gt;</span>Your name (simple text field, error)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text input-alt has-error"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"full-name-simple-error"</span> <span class="na">name=</span><span class="s">"full-name-simple-error"</span> <span class="na">placeholder=</span><span class="s">"e.g. Jane Doe"</span> <span class="na">value=</span><span class="s">"JD"</span> <span class="na">required=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-message has-error"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-message-content"</span><span class="nt">&gt;</span>
+                        You must provide your real name.
+                    <span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"full-name-simple-success"</span><span class="nt">&gt;</span>Your name (simple text field, success)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text input-alt has-success"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"full-name-simple-success"</span> <span class="na">name=</span><span class="s">"full-name-simple-success"</span> <span class="na">placeholder=</span><span class="s">"e.g. Jane Doe"</span> <span class="na">value=</span><span class="s">"Jane Doe"</span> <span class="na">required=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"full-name-simple-disabled"</span><span class="nt">&gt;</span>Your name (disabled simple text field)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text input-alt"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"full-name-simple-disabled"</span> <span class="na">name=</span><span class="s">"full-name-simple-disabled"</span> <span class="na">placeholder=</span><span class="s">"e.g. Jane Doe"</span> <span class="na">required=</span><span class="s">""</span> <span class="na">disabled=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"form-group-hd sr-only"</span><span class="nt">&gt;</span>Search examples<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"search-01"</span><span class="nt">&gt;</span>Search (with visible label)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">id=</span><span class="s">"search-01"</span> <span class="na">name=</span><span class="s">"search-01"</span> <span class="na">placeholder=</span><span class="s">"Search this website"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-brand btn-small"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label sr-only"</span> <span class="na">for=</span><span class="s">"search-02"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">id=</span><span class="s">"search-02"</span> <span class="na">name=</span><span class="s">"search-02"</span> <span class="na">placeholder=</span><span class="s">"Search this website"</span> <span class="na">aria-describedby=</span><span class="s">"search-02-hint"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-brand btn-small"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"search-02-hint"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>(This field has a label that's hidden yet still accessible.)<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"search-03"</span><span class="nt">&gt;</span>Search (with visible label and icon)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">id=</span><span class="s">"search-03"</span> <span class="na">name=</span><span class="s">"search-03"</span> <span class="na">placeholder=</span><span class="s">"Search this website"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-brand btn-small"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-search"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Telephone number<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"form-group-hd sr-only"</span><span class="nt">&gt;</span>Telephone number examples<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"tel-01"</span><span class="nt">&gt;</span>Phone number (with visible label)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">id=</span><span class="s">"tel-01"</span> <span class="na">name=</span><span class="s">"tel-01"</span> <span class="na">placeholder=</span><span class="s">"800-555-1515"</span> <span class="na">aria-describedby=</span><span class="s">"tel-01-hint"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"tel-01-hint"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>Example: 800-555-1515<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Select Menus<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"form-group-hd sr-only"</span><span class="nt">&gt;</span>Examples of various select menus<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"select-01"</span><span class="nt">&gt;</span>Choose your favorite color of the rainbow (default select menu)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"field-input input-select"</span> <span class="na">id=</span><span class="s">"select-01"</span> <span class="na">name=</span><span class="s">"select-01"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>- Choose one -<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Red"</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Orange"</span><span class="nt">&gt;</span>Orange<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Yellow"</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Green"</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Blue"</span><span class="nt">&gt;</span>Blue<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Indigo"</span><span class="nt">&gt;</span>Indigo<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Violet"</span><span class="nt">&gt;</span>Violet<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"select-01-error"</span><span class="nt">&gt;</span>Choose your favorite color of the rainbow (default select menu with error)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"field-input input-select has-error"</span> <span class="na">id=</span><span class="s">"select-01-error"</span> <span class="na">name=</span><span class="s">"select-01-error"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>- Choose one -<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Red"</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Orange"</span><span class="nt">&gt;</span>Orange<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Yellow"</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Green"</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Blue"</span><span class="nt">&gt;</span>Blue<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Indigo"</span><span class="nt">&gt;</span>Indigo<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Violet"</span><span class="nt">&gt;</span>Violet<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-message has-error"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-message-content"</span><span class="nt">&gt;</span>
+                        You must select your favorite color.
+                    <span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"select-01-success"</span><span class="nt">&gt;</span>Choose your favorite color of the rainbow (default select menu with valid selection)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"field-input input-select has-success"</span> <span class="na">name=</span><span class="s">"select-01-success"</span> <span class="na">id=</span><span class="s">"select-01-success"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>- Choose one -<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Red"</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Orange"</span><span class="nt">&gt;</span>Orange<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Yellow"</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Green"</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Blue"</span> <span class="na">selected=</span><span class="s">"selected"</span><span class="nt">&gt;</span>Blue<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Indigo"</span><span class="nt">&gt;</span>Indigo<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Violet"</span><span class="nt">&gt;</span>Violet<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"select-01-succuess-disabled"</span><span class="nt">&gt;</span>Choose your favorite color of the rainbow (default disabled select menu)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"field-input input-select"</span> <span class="na">id=</span><span class="s">"select-01-succuess-disabled"</span> <span class="na">name=</span><span class="s">"select-01-succuess-disabled"</span> <span class="na">disabled=</span><span class="s">""</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>- Choose one -<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Red"</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Orange"</span><span class="nt">&gt;</span>Orange<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Yellow"</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Green"</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Blue"</span><span class="nt">&gt;</span>Blue<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Indigo"</span><span class="nt">&gt;</span>Indigo<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Violet"</span><span class="nt">&gt;</span>Violet<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"select-02"</span><span class="nt">&gt;</span>Choose your favorite color of the rainbow (enhanced select menu)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"field-input input-select replace-select"</span> <span class="na">id=</span><span class="s">"select-02"</span> <span class="na">name=</span><span class="s">"select-02"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>- Choose one -<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Red"</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Orange"</span><span class="nt">&gt;</span>Orange<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Yellow"</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Green"</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Blue"</span><span class="nt">&gt;</span>Blue<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Indigo"</span><span class="nt">&gt;</span>Indigo<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Violet"</span><span class="nt">&gt;</span>Violet<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"select-02-error"</span><span class="nt">&gt;</span>Choose your favorite color of the rainbow (enhanced select menu with error)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"field-input input-select replace-select has-error"</span> <span class="na">id=</span><span class="s">"select-02-error"</span> <span class="na">name=</span><span class="s">"select-02-error"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>- Choose one -<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Red"</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Orange"</span><span class="nt">&gt;</span>Orange<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Yellow"</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Green"</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Blue"</span><span class="nt">&gt;</span>Blue<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Indigo"</span><span class="nt">&gt;</span>Indigo<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Violet"</span><span class="nt">&gt;</span>Violet<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-message has-error"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-message-content"</span><span class="nt">&gt;</span>
+                        You must select your favorite color.
+                    <span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"select-02-success"</span><span class="nt">&gt;</span>Choose your favorite color of the rainbow (enhanced select menu with valid selection)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"field-input input-select replace-select has-success"</span> <span class="na">id=</span><span class="s">"select-02-success"</span> <span class="na">name=</span><span class="s">"select-02-success"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>- Choose one -<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Red"</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Orange"</span><span class="nt">&gt;</span>Orange<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Yellow"</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Green"</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Blue"</span> <span class="na">selected=</span><span class="s">"selected"</span><span class="nt">&gt;</span>Blue<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Indigo"</span><span class="nt">&gt;</span>Indigo<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Violet"</span><span class="nt">&gt;</span>Violet<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"select-02-disabled"</span><span class="nt">&gt;</span>Choose your favorite color of the rainbow (enhanced select and disabled menu)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"field-input input-select replace-select"</span> <span class="na">id=</span><span class="s">"select-02-disabled"</span> <span class="na">name=</span><span class="s">"select-02-disabled"</span> <span class="na">disabled=</span><span class="s">""</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>- Choose one -<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Red"</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Orange"</span><span class="nt">&gt;</span>Orange<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Yellow"</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Green"</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Blue"</span><span class="nt">&gt;</span>Blue<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Indigo"</span><span class="nt">&gt;</span>Indigo<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Violet"</span><span class="nt">&gt;</span>Violet<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Radios<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"field-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"field-group-hd field-label"</span><span class="nt">&gt;</span>How would you prefer to be contacted? (default radio buttons)<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"updates-mobile-text-01"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"field-input input-radio"</span> <span class="na">id=</span><span class="s">"updates-mobile-text-01"</span> <span class="na">name=</span><span class="s">"updates-notifications-01"</span> <span class="na">value=</span><span class="s">"Mobile text messages"</span> <span class="na">aria-describedby=</span><span class="s">"updates-mobile-text-01-hint"</span> <span class="na">checked=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Text messages on my mobile phone<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"updates-mobile-text-01-hint"</span><span class="nt">&gt;</span>Rates apply. Please consult your plan.<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"updates-email-01"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"field-input input-radio"</span> <span class="na">id=</span><span class="s">"updates-email-01"</span> <span class="na">name=</span><span class="s">"updates-notifications-01"</span> <span class="na">value=</span><span class="s">"Email messages"</span> <span class="na">aria-describedby=</span><span class="s">"updates-email-01-hint"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Email at matttracker@gmail.com<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"updates-email-01-hint"</span><span class="nt">&gt;</span>We will never spam you. Pinky swear.<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"field-input input-radio"</span> <span class="na">id=</span><span class="s">"updates-email-04"</span> <span class="na">name=</span><span class="s">"updates-notifications-01"</span> <span class="na">value=</span><span class="s">"Snail mail"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"updates-email-04"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Please send me a handwritten letter (unnested label and input)<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"updates-email-05"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"field-input input-radio"</span> <span class="na">id=</span><span class="s">"updates-email-05"</span> <span class="na">name=</span><span class="s">"updates-notifications-01"</span> <span class="na">value=</span><span class="s">"Email messages"</span> <span class="na">disabled=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Never contact me (disabled radio button)<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+        <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"field-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"field-group-hd field-label"</span><span class="nt">&gt;</span>How would you prefer to be contacted? (enhanced radio buttons)<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"updates-mobile-text-02"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"field-input input-radio replace-radio"</span> <span class="na">id=</span><span class="s">"updates-mobile-text-02"</span> <span class="na">name=</span><span class="s">"updates-notifications-02"</span> <span class="na">value=</span><span class="s">"Mobile text messages"</span> <span class="na">aria-describedby=</span><span class="s">"updates-mobile-text-02-hint"</span> <span class="na">checked=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Text messages on my mobile phone<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"updates-mobile-text-02-hint"</span><span class="nt">&gt;</span>Rates apply. Pelase consult your plan.<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"updates-email-02"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"field-input input-radio replace-radio"</span> <span class="na">id=</span><span class="s">"updates-email-02"</span> <span class="na">name=</span><span class="s">"updates-notifications-02"</span> <span class="na">value=</span><span class="s">"Email messages"</span> <span class="na">aria-describedby=</span><span class="s">"updates-email-02-hint"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Email at matttracker@gmail.com<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"updates-email-02-hint"</span><span class="nt">&gt;</span>We will never spam you. Pinky swear.<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"updates-email-06"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"field-input input-radio replace-radio"</span> <span class="na">id=</span><span class="s">"updates-email-06"</span> <span class="na">name=</span><span class="s">"updates-notifications-02"</span> <span class="na">value=</span><span class="s">"Email messages"</span> <span class="na">disabled=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Never contact me (disabled radio button)<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Checkboxes<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"field-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"field-group-hd field-label"</span><span class="nt">&gt;</span>Select your favorite pizza toppings (default checkboxes)<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"checkbox-01"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"field-input input-checkbox"</span> <span class="na">id=</span><span class="s">"checkbox-01"</span> <span class="na">name=</span><span class="s">"checkboxes-01"</span> <span class="na">value=</span><span class="s">"Pepperoni"</span> <span class="na">checked=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Pepperoni<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"checkbox-02"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"field-input input-checkbox"</span> <span class="na">id=</span><span class="s">"checkbox-02"</span> <span class="na">name=</span><span class="s">"checkboxes-01"</span> <span class="na">value=</span><span class="s">"Sausage"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Sausage<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"checkbox-03"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"field-input input-checkbox"</span> <span class="na">id=</span><span class="s">"checkbox-03"</span> <span class="na">name=</span><span class="s">"checkboxes-01"</span> <span class="na">value=</span><span class="s">"Cheese"</span> <span class="na">checked=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Cheese<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"checkbox-04"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"field-input input-checkbox"</span> <span class="na">id=</span><span class="s">"checkbox-04"</span> <span class="na">name=</span><span class="s">"checkboxes-01"</span> <span class="na">value=</span><span class="s">"Sauce"</span> <span class="na">disabled=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Sauce (disabled checkbox)<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+        <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"field-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"field-group-hd field-label"</span><span class="nt">&gt;</span>What is your favorite cereal? (enhanced checkboxes)<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"checkbox-05"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"field-input input-checkbox replace-checkbox"</span> <span class="na">id=</span><span class="s">"checkbox-05"</span> <span class="na">name=</span><span class="s">"checkboxes-02"</span> <span class="na">value=</span><span class="s">"Cinnamon Toast Crunch"</span> <span class="na">checked=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Cinnamon Toast Crunch<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"checkbox-06"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"field-input input-checkbox replace-checkbox"</span> <span class="na">id=</span><span class="s">"checkbox-06"</span> <span class="na">name=</span><span class="s">"checkboxes-02"</span> <span class="na">value=</span><span class="s">"Peanut Butter Cap'n Crunch"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Peanut Butter Cap'n Crunch<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"checkbox-07"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"field-input input-checkbox replace-checkbox"</span> <span class="na">id=</span><span class="s">"checkbox-07"</span> <span class="na">name=</span><span class="s">"checkboxes-02"</span> <span class="na">value=</span><span class="s">"Cookie Crisp"</span> <span class="na">checked=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Cookie Crisp<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline"</span> <span class="na">for=</span><span class="s">"checkbox-08"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"field-input input-checkbox replace-checkbox"</span> <span class="na">id=</span><span class="s">"checkbox-08"</span> <span class="na">name=</span><span class="s">"checkboxes-02"</span> <span class="na">value=</span><span class="s">"Cheerios"</span> <span class="na">disabled=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>Cheerios (disabled enhanced checkbox)<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Textareas<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"form-group-hd sr-only"</span><span class="nt">&gt;</span>Examples of textareas<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"textarea-01"</span><span class="nt">&gt;</span>Create a haiku (short textarea)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"field-textarea input-textarea textarea-short"</span> <span class="na">id=</span><span class="s">"textarea-01"</span> <span class="na">name=</span><span class="s">"textarea-01"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"textarea-01-error"</span><span class="nt">&gt;</span>Create a haiku (short textarea with error)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"field-textarea input-textarea textarea-short has-error"</span> <span class="na">id=</span><span class="s">"textarea-01-error"</span> <span class="na">name=</span><span class="s">"textarea-01-error"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-message has-error"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-message-content"</span><span class="nt">&gt;</span>
+                        You must provide your real name.
+                    <span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"textarea-01-success"</span><span class="nt">&gt;</span>Create a haiku (short textarea with valid entry)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"field-textarea input-textarea textarea-short has-success"</span> <span class="na">id=</span><span class="s">"textarea-01-success"</span> <span class="na">name=</span><span class="s">"textarea-01-success"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"textarea-02"</span><span class="nt">&gt;</span>Tell us a little about yourself (base textarea)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"field-textarea input-textarea textarea-medium"</span> <span class="na">id=</span><span class="s">"textarea-02"</span> <span class="na">name=</span><span class="s">"textarea-02"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"textarea-03"</span><span class="nt">&gt;</span>Tell us a little more about yourself (tall textarea)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"field-textarea input-textarea textarea-tall"</span> <span class="na">id=</span><span class="s">"textarea-03"</span> <span class="na">name=</span><span class="s">"textarea-03"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"textarea-04"</span><span class="nt">&gt;</span>Tell us your favorite story from when you were a child (block textarea)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"field-textarea input-textarea textarea-medium textarea-block"</span> <span class="na">id=</span><span class="s">"textarea-04"</span> <span class="na">name=</span><span class="s">"textarea-04"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Sliders<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"slider-01"</span><span class="nt">&gt;</span>How much to the max would you like to take it?<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"range"</span> <span class="na">class=</span><span class="s">"input-slider"</span> <span class="na">id=</span><span class="s">"slider-01"</span> <span class="na">name=</span><span class="s">"slider-01"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"12"</span> <span class="na">step=</span><span class="s">"1"</span> <span class="na">value=</span><span class="s">"6"</span> <span class="na">role=</span><span class="s">"slider"</span> <span class="na">aria-valuemin=</span><span class="s">"1"</span> <span class="na">aria-valuemax=</span><span class="s">"12"</span> <span class="na">aria-valuenow=</span><span class="s">"6"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Progress bars<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"progress-01"</span><span class="nt">&gt;</span>You're doing great! Keep it up!<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;progress</span> <span class="na">class=</span><span class="s">"input-progress"</span> <span class="na">id=</span><span class="s">"progress-01"</span> <span class="na">name=</span><span class="s">"progress-01"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">value=</span><span class="s">"50"</span> <span class="na">max=</span><span class="s">"100"</span> <span class="na">aria-valuenow=</span><span class="s">"50"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/progress&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Example form<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"hd-5"</span><span class="nt">&gt;</span>Create an account<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"copy-base"</span><span class="nt">&gt;</span>Before you can continue with ACME learning, you'll need to create an account with us. They're free and we don't spam you with ACMESpam.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"form-group-hd"</span><span class="nt">&gt;</span>Required information<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label field-required"</span> <span class="na">for=</span><span class="s">"first-name"</span><span class="nt">&gt;</span>First name<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"first-name"</span> <span class="na">name=</span><span class="s">"first-name"</span> <span class="na">aria-describedby=</span><span class="s">"first-name-hint"</span> <span class="na">placeholder=</span><span class="s">"Jane"</span> <span class="na">required=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"first-name-hint"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>This allows us to personalize your experience.<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label field-required"</span> <span class="na">for=</span><span class="s">"last-name"</span><span class="nt">&gt;</span>Last name<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"last-name"</span> <span class="na">name=</span><span class="s">"last-name"</span> <span class="na">placeholder=</span><span class="s">"Doe"</span> <span class="na">required=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label field-required"</span> <span class="na">for=</span><span class="s">"email-address"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text"</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"email-address"</span> <span class="na">name=</span><span class="s">"email-address"</span> <span class="na">placeholder=</span><span class="s">"username@domain.com"</span> <span class="na">aria-describedby=</span><span class="s">"email-address-hint"</span> <span class="na">required=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"email-address-hint"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>Example: username@domain.com<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label field-required"</span> <span class="na">for=</span><span class="s">"phone-number"</span><span class="nt">&gt;</span>Phone number<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">id=</span><span class="s">"phone-number"</span> <span class="na">name=</span><span class="s">"phone-number"</span> <span class="na">placeholder=</span><span class="s">"800-555-1515"</span> <span class="na">aria-describedby=</span><span class="s">"phone-number-hint"</span> <span class="na">required=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"phone-number-hint"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>Example: 800-555-1515<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label field-required"</span> <span class="na">for=</span><span class="s">"username"</span><span class="nt">&gt;</span>Username<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"username"</span> <span class="na">name=</span><span class="s">"username"</span> <span class="na">aria-describedby=</span><span class="s">"username-hint"</span> <span class="na">placeholder=</span><span class="s">"JaneDoe"</span> <span class="na">required=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"username-hint"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>You'll log in with this for future visits.<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label field-required"</span> <span class="na">for=</span><span class="s">"password-01"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text"</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">id=</span><span class="s">"password-01"</span> <span class="na">name=</span><span class="s">"password-01"</span> <span class="na">required=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label field-required"</span> <span class="na">for=</span><span class="s">"password-02"</span><span class="nt">&gt;</span>Type your password again<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"field-input input-text"</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">id=</span><span class="s">"password-02"</span> <span class="na">name=</span><span class="s">"password-02"</span> <span class="na">required=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+        <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"form-group-hd"</span><span class="nt">&gt;</span>Additional and optional information<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"gender"</span><span class="nt">&gt;</span>Gender<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"field-input input-select replace-select"</span> <span class="na">id=</span><span class="s">"gender"</span> <span class="na">name=</span><span class="s">"gender"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>--<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Male"</span><span class="nt">&gt;</span>Male<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Female"</span><span class="nt">&gt;</span>Female<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Other"</span><span class="nt">&gt;</span>Other<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"dob"</span><span class="nt">&gt;</span>Year of birth<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"field-input input-select replace-select"</span> <span class="na">id=</span><span class="s">"dob"</span> <span class="na">name=</span><span class="s">"dob"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>--<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2015"</span><span class="nt">&gt;</span>2015<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2014"</span><span class="nt">&gt;</span>2014<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2013"</span><span class="nt">&gt;</span>2013<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2012"</span><span class="nt">&gt;</span>2012<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2011"</span><span class="nt">&gt;</span>2011<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2010"</span><span class="nt">&gt;</span>2010<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"education"</span><span class="nt">&gt;</span>Highest level of education completed<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"field-input input-select replace-select"</span> <span class="na">id=</span><span class="s">"education"</span> <span class="na">name=</span><span class="s">"education"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>--<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Doctorate"</span><span class="nt">&gt;</span>Doctorate<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Master's or professional degree"</span><span class="nt">&gt;</span>Master's or professional degree<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Bachelor's degree"</span><span class="nt">&gt;</span>Bachelor's degree<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Associates's degree"</span><span class="nt">&gt;</span>Associates's degree<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Secondary/High School"</span><span class="nt">&gt;</span>Secondary/High School<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"None"</span><span class="nt">&gt;</span>None<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Other"</span><span class="nt">&gt;</span>Other<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label"</span> <span class="na">for=</span><span class="s">"mailing-address"</span><span class="nt">&gt;</span>Mailing address<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"field-textarea input-textarea textarea-short"</span> <span class="na">id=</span><span class="s">"mailing-address"</span> <span class="na">name=</span><span class="s">"mailing-address"</span> <span class="na">aria-describedby=</span><span class="s">"mailing-address-hint"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field-hint"</span> <span class="na">id=</span><span class="s">"mailing-address-hint"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>Where you'll be receiving your ACME packages.<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"field-label label-inline field-required"</span> <span class="na">for=</span><span class="s">"agree-to-terms"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"field-input input-checkbox replace-checkbox"</span> <span class="na">id=</span><span class="s">"agree-to-terms"</span> <span class="na">name=</span><span class="s">"agree-to-terms"</span> <span class="na">value=</span><span class="s">"I agree to the terms and conditions."</span> <span class="na">required=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"field-input-label"</span><span class="nt">&gt;</span>I agree to the ACME <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://ux.edx.org"</span><span class="nt">&gt;</span>Terms and Conditions<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-actions"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-brand btn-base"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Create account<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-brand btn-base"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Cancel registration<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+                    </div>
+                </div>
+
+                <div class="pldoc-tab pldoc-pattern-styling is-hidden" id="forms-styling" tabindex="-1">
+                    <h2 class="pldoc-heading pldoc-tab-heading pldoc-pattern-styling-title">Forms Style</h2>
+
+                    <div class="pldoc-tab-content">
+                        <p class="copy-base">View <a class="pldoc-link" href="https://github.com/edx/ux-pattern-library/blob/master/pattern-library/sass/patterns/_forms.scss">the original source of the CSS as SCSS</a> in this project's repo.</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </article>
+</section>
+
+
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <div class="pldoc-wrapper-footer-site">
+    <footer class="pldoc-footer-site">
+        <div class="pldoc-footer-site-copyright">
+            <p class="pldoc-copy copy-micro">
+                Copyright &copy; <time datetime="2016-05-05T10:29:16-04:00">2016</time> edX.
+            </p>
+            <p class="pldoc-copy copy-micro">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+            </p>
+            <p class="pldoc-copy copy-micro">
+                These works by <a xmlns:cc="http://creativecommons.org/ns#" href="http://open.edx.org" property="cc:attributionName" rel="cc:attributionURL">edX Inc.</a>
+                are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+        </div>
+    </footer>
+</div>
+
+    </div>
+
+    <script src="/public/pattern-library.js"></script>
+
+</body>
+</html>
+

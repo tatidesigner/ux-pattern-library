@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <base href="/">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>
+        
+        Lists &middot; edX Pattern Library
+        
+    </title>
+
+    <meta name="description" content="The Visual, UI, and Front End styleguide for edX's applications">
+
+    <link rel="stylesheet" href="/public/css/main-ltr.css">
+
+</head>
+
+
+<body class="pldoc view-">
+    <div class="pldoc-nav-skip sr-only">
+        <a class="pldoc-action-skip" href="#content-main">Skip to the main content</a>
+    </div>
+
+    <hr class="pldoc-divider sr-only">
+
+    <div class="pldoc-wrapper-view">
+        <div class="pldoc-wrapper-header-site">
+    <header class="pldoc-header-site" role="banner" aria-labelledby="pldoc-header-site-title">
+        <div class="pldoc-header-main">
+            <h1 class="hd-2 de-emphasized pldoc-header-site-title">
+                <a href="/">
+                    <img class="pldoc-header-logo" src="/./public/images/edx-logo.svg"
+                         alt="edX Pattern Library home" />
+                    <span>Pattern Library</span>
+                </a>
+            </h1>
+        </div>
+    </header>
+</div>
+
+
+        <div class="pldoc-wrapper-content" id="content-top" tabindex="-1">
+            <div class="pldoc-content">
+                <div class="pldoc-wrapper-content-supplemental">
+                    <nav class="pldoc-nav pldoc-nav-internal" role="navigation" aria-label="edX Pattern Library">
+    <h2 class="pldoc-heading pldoc-nav-title hd-6">edX Pattern Library</h2>
+    <ul class="list-unstyled list-patterns">
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./">
+    
+    Introduction
+    
+        </a>
+    
+</li>
+
+    </ul>
+</nav>
+
+
+<nav class="pldoc-nav pldoc-nav-internal" role="navigation" aria-label="Design Elements">
+    <h2 class="pldoc-heading pldoc-nav-title hd-6">Design Elements</h2>
+    <ul class="list-unstyled list-patterns">
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/colors/">
+    
+    Colors
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/copy/">
+    
+    Copy
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/grid/">
+    
+    Grid System
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/headings/">
+    
+    Headings
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/icons/">
+    
+    Icons
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/layouts/">
+    
+    Layouts
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./design_elements/depth/">
+    
+    UI Depth
+    
+        </a>
+    
+</li>
+
+    
+    </ul>
+</nav>
+
+
+
+<nav class="pldoc-nav pldoc-nav-internal" role="navigation" aria-label="Components">
+    <h2 class="pldoc-heading pldoc-nav-title hd-6">Components</h2>
+    <ul class="list-unstyled list-patterns">
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/alerts/">
+    
+    Alerts
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/buttons/">
+    
+    Buttons
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/dropdown-menu/">
+    
+    Dropdown Menu
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/forms/">
+    
+    Forms
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent is-current">
+    
+    Lists
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
+        <a class="pattern-title pattern pldoc-link" href="/./components/tables/">
+    
+    Tables
+    
+        </a>
+    
+</li>
+
+    
+    </ul>
+</nav>
+
+
+                </div>
+
+                <hr class="pldoc-divider sr-only">
+
+                <div class="pldoc-wrapper-content-main">
+                    <main class="pldoc-content-main" id="content-main" aria-label="Content">
+                        
+
+
+<section class="pldoc-wrapper-pattern">
+    <article class="pldoc-pattern pldoc-pattern-lists" id="lists" tabindex="-1" aria-label="lists">
+
+        <header class="pldoc-pattern-header">
+            <h1 class="pldoc-heading pldoc-pattern-title hd-4">Lists</h1>
+
+            <ul class="list-inline pldoc-pattern-meta copy-micro de-emphasized">
+                
+                
+                <li class="item meta meta-doclink">
+                    <a class="pldoc-link" href="https://github.com/edx/ux-pattern-library/wiki/Styleguide:-Lists"><span class="sr-only">View </span>Documentation</a>
+                </li>
+                
+            </ul>
+        </header>
+
+        <div class="pldoc-pattern-info">
+            <p class="copy-base">Lists are used to group related content in a number of settings (e.g. ordered, unordered) and cases (e.g. definitions, links, etc.).</p>
+        </div>
+
+        
+
+        <div class="pldoc-tab-wrapper">
+            
+            <ul class="pldoc-tab-labels pldoc-pattern-navigation">
+                <li class="pldoc-tab-label">
+                    <button class="pldoc-link pldoc-link-preview is-active" data-href="#lists-preview">Preview</button>
+                </li>
+                <li class="pldoc-tab-label">
+                    <button class="pldoc-link pldoc-link-markup" data-href="#lists-markup">Markup</button>
+                </li>
+                
+                
+                <li class="pldoc-tab-label">
+                    <button class="pldoc-link pldoc-link-styling" data-href="#lists-styling">Styling</button>
+                </li>
+                
+            </ul>
+            
+
+            <div class="pldoc-tabs">
+                <div class="pldoc-tab pldoc-pattern-preview is-active" id="lists-preview" tabindex="-1">
+                    <h2 class="pldoc-heading pldoc-tab-heading pldoc-pattern-preview-title">Lists Preview</h2>
+
+                    <div class="pldoc-tab-content">
+                        
+
+                        <h3 class="hd-6 example-set-hd">Bulleted List</h3>
+
+<div class="example-set-description copy copy-meta">
+    <p>Bulleted, or unordered , lists show a loose association with no sequential meaning. Its important to note that list-based styling can be applied to non-semantic list markup, but only when appropriate (and when leveraging any necessary role attributes).</p>
+</div>
+
+<div class="example-set">
+    <ul class="list-bulleted">
+        <li class="item">Apples</li>
+        <li class="item">Apricots</li>
+        <li class="item">Bananas</li>
+        <li class="item">Blackberries</li>
+        <li class="item">Blueberries</li>
+        <li class="item">Cherries</li>
+        <li class="item">Coconuts</li>
+        <li class="item">Cranberries</li>
+        <li class="item">Figs</li>
+        <li class="item">Oranges</li>
+        <li class="item">Plums</li>
+    </ul>
+
+    <ul class="list-bulleted list-circle">
+        <li class="item">Blueberries</li>
+        <li class="item">Cherries</li>
+        <li class="item">Coconuts</li>
+        <li class="item">Cranberries</li>
+    </ul>
+
+    <div class="list-bulleted" role="list">
+        <p class="item" role="listitem">Designed on top of an ocean, the town of Darnassea is home to dark elves lead by Colonel Alduin. This town wasn't built by an ocean by accident, as it has ancient, lost technologies, which is of great importance to the people of Darnassea and its success.</p>
+        <p class="item" role="listitem">Darkwell has a troubled economy, which is mainly supported by jewelcrafting, fishing and fletching. But their biggest strengths are intricate jewelcrafting and rare herbalism. However, Darkwell lacks people skilled in farming.</p>
+        <p class="item">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.</p>
+    </div>
+
+    <ul class="list-bulleted list-disc no-indent">
+        <li class="item">Figs (No Indent)</li>
+        <li class="item">Oranges (No Indent)</li>
+        <li class="item">Plums (No Indent)</li>
+    </ul>
+</div>
+
+<h3 class="hd-6 example-set-hd">Ordered Lists</h3>
+
+<div class="example-set-description copy copy-meta">
+    <p>Ordered lists show a sequentially-based association between items. Its important to note that list-based styling can be applied to non-semantic list markup, but only when appropriate (and when leveraging any necessary role attributes).</p>
+</div>
+
+<div class="example-set">
+    <ol class="list-ordered">
+        <li class="item">Apples</li>
+        <li class="item">Apricots</li>
+        <li class="item">Bananas</li>
+        <li class="item">Blackberries</li>
+        <li class="item">Blueberries</li>
+        <li class="item">Cherries</li>
+        <li class="item">Coconuts</li>
+        <li class="item">Cranberries</li>
+        <li class="item">Figs</li>
+        <li class="item">Oranges</li>
+        <li class="item">Plums</li>
+    </ol>
+
+    <div class="list-ordered" role="list">
+        <p class="item" role="listitem">Designed on top of an ocean, the town of Darnassea is home to dark elves lead by Colonel Alduin. This town wasn't built by an ocean by accident, as it has ancient, lost technologies, which is of great importance to the people of Darnassea and its success.</p>
+        <p class="item" role="listitem">Darkwell has a troubled economy, which is mainly supported by jewelcrafting, fishing and fletching. But their biggest strengths are intricate jewelcrafting and rare herbalism. However, Darkwell lacks people skilled in farming.</p>
+        <p class="item" role="listitem">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.</p>
+    </div>
+
+    <ol class="list-ordered no-indent">
+        <li class="item">Figs (No Indent)</li>
+        <li class="item">Oranges (No Indent)</li>
+        <li class="item">Plums (No Indent)</li>
+    </ol>
+</div>
+
+<h3 class="hd-6 example-set-hd">Unstyled Lists</h3>
+<div class="example-set">
+    <ul class="list-unstyled">
+        <li class="item">Apples</li>
+        <li class="item">Apricots</li>
+        <li class="item">
+            <a href="https://solidthreads.com/media/catalog/product/i/m/image_78.jpg">Bananas</a>
+        </li>
+        <li class="item">Blackberries</li>
+    </ul>
+</div>
+
+<h3 class="hd-6 example-set-hd">Inline List</h3>
+<div class="example-set">
+    <ol class="list-inline">
+        <li class="item">Install</li>
+        <li class="item">Configure</li>
+        <li class="item">Create New File</li>
+        <li class="item">
+            <a href="https://solidthreads.com/media/catalog/product/i/m/image_78.jpg">Begin Authoring</a>
+        </li>
+    </ol>
+</div>
+
+<h3 class="hd-6 example-set-hd">Nested Lists</h3>
+<div class="example-set">
+    <ul>
+        <li class="item">
+            Apples
+
+            <ul>
+                <li>Red Delicious</li>
+                <li>Macintosh</li>
+                <li>Granny Smith</li>
+                <li>Honey Crisp</li>
+            </ul>
+        </li>
+        <li class="item">Apricots</li>
+        <li class="item">Bananas</li>
+        <li class="item">Blackberries</li>
+    </ul>
+
+    <ol>
+        <li class="item">Blueberries</li>
+        <li class="item">
+            Cherries
+
+            <ol>
+                <li>Bing</li>
+                <li>Balaton</li>
+                <li>Ulster</li>
+                <li>Maraschino</li>
+            </ol>
+        </li>
+        <li class="item">Coconuts</li>
+        <li class="item">Cranberries</li>
+    </ol>
+</div>
+
+<h3 class="hd-6 example-set-hd">Definition Lists</h3>
+<div class="example-set">
+    <dl>
+        <dt class="hd-3">RSS (hd-3)</dt>
+        <dd>An XML format for aggregating information from websites whose 
+        content is frequently updated.</dd>
+        <dt class="hd-3">Weblog  (hd-3)</dt>
+        <dd>Contraction of the term "web log", a weblog is a 
+        website that is periodically updated, like a journal</dd>
+    </dl>
+
+    <dl>
+        <dt class="hd-6">Founders: (hd-6)</dt>
+        <dd class="copy-meta">Clark Kent (meta copy)</dd>
+        <dd class="copy-meta">Bruce Wayne (meta copy)</dd>
+        <dd class="copy-meta">Diana Prince (meta copy)</dd>
+        <dt class="hd-6">Members: (hd-6)</dt>
+        <dd class="copy-meta">Hal Jordan (meta copy)</dd>
+        <dd class="copy-meta">Barry Allen (meta copy)</dd>
+        <dd class="copy-meta">J'onn J'onzz (meta copy)</dd>
+    </dl>
+</div>
+
+<h3 class="hd-6 example-set-hd">List with Visual Dividers</h3>
+<div class="example-set">
+    <ul class="list-divided">
+        <li class="item">Apples</li>
+        <li class="item">Apricots</li>
+        <li class="item">
+            <a href="https://solidthreads.com/media/catalog/product/i/m/image_78.jpg">Bananas</a>
+        </li>
+        <li class="item">Blackberries</li>
+    </ul>
+
+    <ul class="list-divided">
+        <li class="item has-block-link">
+            <a href="http://ux.edx.org/">Apples (Block-level links)</a>
+        </li>
+        <li class="item has-block-link">
+            <a href="http://ux.edx.org/">Apricots (Block-level links)</a>
+        </li>
+        <li class="item has-block-link">
+            <a href="http://ux.edx.org/">Bananas (Block-level links)</a>
+        </li>
+    </ul>
+</div>
+
+<h3 class="hd-6 example-set-hd">Lists with Complex Content</h3>
+
+<div class="example-set-description copy copy-meta">
+    <p>Light scaffolding for more complex UI/visually appearing lists is provided. Please note that the best semantic markup for the situation should be chosen when leveraging this extension.</p>
+</div>
+
+<div class="example-set">
+    <div class="list" role="list">
+        <div class="item item-complex" role="listitem">
+            <h2 class="item-hd">Home</h2>
+            <p class="item-copy">You know, where the heart is</p>
+        </div>
+        <div class="item item-complex" role="listitem">
+            <span class="item-hd">Darnassea</span>
+            <p class="item-copy">Designed on top of an ocean, the town of Darnassea is home to dark elves lead by Colonel Alduin.
+This town wasn't built by an ocean by accident, as it has ancient, lost technologies, which is of great importance to the people of Darnassea and its success.</p>
+        </div>
+        <div class="item item-complex" role="listitem">
+            <h2 class="item-hd hd-2">Complex Item Heading (hd-2)</h2>
+            <p class="item-copy-large">Darkwell has a troubled economy, which is mainly supported by jewelcrafting, fishing and fletching. But their biggest strengths are intricate jewelcrafting and rare herbalism. However, Darkwell lacks people skilled in farming (large copy).</p>
+        </div>
+        <div class="item item-complex" role="listitem">
+            <h2 class="item-hd hd-5">Darkwell (hd-5)</h2>
+            <p class="item-copy-meta">Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success (meta copy).</p>
+        </div>
+    </div>
+</div>
+
+<h3 class="hd-6 example-set-hd">Grouped Lists</h3>
+
+<div class="example-set-description copy copy-meta">
+    <p>Grouped lists more strongly show a relationship between items. Additionally, they can be used in tandem with block-level link styling.</p>
+</div>
+
+<div class="example-set">
+    <ul class="list-grouped">
+        <li class="item">Apples</li>
+        <li class="item">Apricots</li>
+        <li class="item"><a href="http://ux.edx.org">Bananas</a></li>
+        <li class="item">Blackberries</li>
+    </ul>
+    
+    <div class="list-grouped" role="list">
+        <div class="item item-complex" role="listitem">
+            <span class="item-hd">Darnassea</span>
+            <p class="item-copy">Designed on top of an ocean, the town of Darnassea is home to dark elves lead by Colonel Alduin.
+This town wasn't built by an ocean by accident, as it has ancient, lost technologies, which is of great importance to the people of Darnassea and its success</p>
+        </div>
+        <div class="item item-complex" role="listitem">
+            <h5 class="item-hd hd-2">Darkwell (hd-2)</h5>
+            <p class="item-copy-large">Darkwell has a troubled economy, which is mainly supported by jewelcrafting, fishing and fletching. But their biggest strengths are intricate jewelcrafting and rare herbalism. However, Darkwell lacks people skilled in farming (large copy).</p>
+        </div>
+    </div>
+
+    <ul class="list-grouped">
+        <li class="item has-block-link">
+            <a href="http://ux.edx.org/">Apples (Block-level links)</a>
+        </li>
+        <li class="item has-block-link">
+            <a href="http://ux.edx.org/">Apricots (Block-level links)</a>
+        </li>
+        <li class="item item-complex">
+            <h5 class="item-hd hd-2">Darkwell (hd-2)</h5>
+            <p class="item-copy-large">Darkwell has a troubled economy, which is mainly supported by jewelcrafting, fishing and fletching. But their biggest strengths are intricate jewelcrafting and rare herbalism. However, Darkwell lacks people skilled in farming (large copy).</p>
+        </li>
+        <li class="item has-block-link">
+            <a href="http://ux.edx.org/">Bananas (Block-level links)</a>
+        </li>
+    </ul>
+</div>
+
+                    </div>
+                </div>
+
+                
+                <div class="pldoc-tab pldoc-pattern-markup is-hidden" id="lists-markup" tabindex="-1">
+                    <h2 class="pldoc-heading pldoc-tab-heading pldoc-pattern-markup-title">Lists Markup</h2>
+
+                    <div class="pldoc-tab-content">
+                        
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Bulleted List<span class="nt">&lt;/h3&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set-description copy copy-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Bulleted, or unordered , lists show a loose association with no sequential meaning. Its important to note that list-based styling can be applied to non-semantic list markup, but only when appropriate (and when leveraging any necessary role attributes).<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-bulleted"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Apples<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Apricots<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Bananas<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Blackberries<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Blueberries<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Cherries<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Coconuts<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Cranberries<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Figs<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Oranges<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Plums<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-bulleted list-circle"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Blueberries<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Cherries<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Coconuts<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Cranberries<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-bulleted"</span> <span class="na">role=</span><span class="s">"list"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"item"</span> <span class="na">role=</span><span class="s">"listitem"</span><span class="nt">&gt;</span>Designed on top of an ocean, the town of Darnassea is home to dark elves lead by Colonel Alduin. This town wasn't built by an ocean by accident, as it has ancient, lost technologies, which is of great importance to the people of Darnassea and its success.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"item"</span> <span class="na">role=</span><span class="s">"listitem"</span><span class="nt">&gt;</span>Darkwell has a troubled economy, which is mainly supported by jewelcrafting, fishing and fletching. But their biggest strengths are intricate jewelcrafting and rare herbalism. However, Darkwell lacks people skilled in farming.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-bulleted list-disc no-indent"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Figs (No Indent)<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Oranges (No Indent)<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Plums (No Indent)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Ordered Lists<span class="nt">&lt;/h3&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set-description copy copy-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Ordered lists show a sequentially-based association between items. Its important to note that list-based styling can be applied to non-semantic list markup, but only when appropriate (and when leveraging any necessary role attributes).<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"list-ordered"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Apples<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Apricots<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Bananas<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Blackberries<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Blueberries<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Cherries<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Coconuts<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Cranberries<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Figs<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Oranges<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Plums<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-ordered"</span> <span class="na">role=</span><span class="s">"list"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"item"</span> <span class="na">role=</span><span class="s">"listitem"</span><span class="nt">&gt;</span>Designed on top of an ocean, the town of Darnassea is home to dark elves lead by Colonel Alduin. This town wasn't built by an ocean by accident, as it has ancient, lost technologies, which is of great importance to the people of Darnassea and its success.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"item"</span> <span class="na">role=</span><span class="s">"listitem"</span><span class="nt">&gt;</span>Darkwell has a troubled economy, which is mainly supported by jewelcrafting, fishing and fletching. But their biggest strengths are intricate jewelcrafting and rare herbalism. However, Darkwell lacks people skilled in farming.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"item"</span> <span class="na">role=</span><span class="s">"listitem"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"list-ordered no-indent"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Figs (No Indent)<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Oranges (No Indent)<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Plums (No Indent)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Unstyled Lists<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Apples<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Apricots<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://solidthreads.com/media/catalog/product/i/m/image_78.jpg"</span><span class="nt">&gt;</span>Bananas<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Blackberries<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Inline List<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"list-inline"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Install<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Configure<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Create New File<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://solidthreads.com/media/catalog/product/i/m/image_78.jpg"</span><span class="nt">&gt;</span>Begin Authoring<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Nested Lists<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>
+            Apples
+
+            <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt;</span>Red Delicious<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>Macintosh<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>Granny Smith<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>Honey Crisp<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Apricots<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Bananas<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Blackberries<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+
+    <span class="nt">&lt;ol&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Blueberries<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>
+            Cherries
+
+            <span class="nt">&lt;ol&gt;</span>
+                <span class="nt">&lt;li&gt;</span>Bing<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>Balaton<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>Ulster<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>Maraschino<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ol&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Coconuts<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Cranberries<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Definition Lists<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;dl&gt;</span>
+        <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"hd-3"</span><span class="nt">&gt;</span>RSS (hd-3)<span class="nt">&lt;/dt&gt;</span>
+        <span class="nt">&lt;dd&gt;</span>An XML format for aggregating information from websites whose 
+        content is frequently updated.<span class="nt">&lt;/dd&gt;</span>
+        <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"hd-3"</span><span class="nt">&gt;</span>Weblog  (hd-3)<span class="nt">&lt;/dt&gt;</span>
+        <span class="nt">&lt;dd&gt;</span>Contraction of the term "web log", a weblog is a 
+        website that is periodically updated, like a journal<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;/dl&gt;</span>
+
+    <span class="nt">&lt;dl&gt;</span>
+        <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"hd-6"</span><span class="nt">&gt;</span>Founders: (hd-6)<span class="nt">&lt;/dt&gt;</span>
+        <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Clark Kent (meta copy)<span class="nt">&lt;/dd&gt;</span>
+        <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Bruce Wayne (meta copy)<span class="nt">&lt;/dd&gt;</span>
+        <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Diana Prince (meta copy)<span class="nt">&lt;/dd&gt;</span>
+        <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"hd-6"</span><span class="nt">&gt;</span>Members: (hd-6)<span class="nt">&lt;/dt&gt;</span>
+        <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Hal Jordan (meta copy)<span class="nt">&lt;/dd&gt;</span>
+        <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>Barry Allen (meta copy)<span class="nt">&lt;/dd&gt;</span>
+        <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"copy-meta"</span><span class="nt">&gt;</span>J'onn J'onzz (meta copy)<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;/dl&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>List with Visual Dividers<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-divided"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Apples<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Apricots<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://solidthreads.com/media/catalog/product/i/m/image_78.jpg"</span><span class="nt">&gt;</span>Bananas<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Blackberries<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-divided"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item has-block-link"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://ux.edx.org/"</span><span class="nt">&gt;</span>Apples (Block-level links)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item has-block-link"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://ux.edx.org/"</span><span class="nt">&gt;</span>Apricots (Block-level links)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item has-block-link"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://ux.edx.org/"</span><span class="nt">&gt;</span>Bananas (Block-level links)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Lists with Complex Content<span class="nt">&lt;/h3&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set-description copy copy-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Light scaffolding for more complex UI/visually appearing lists is provided. Please note that the best semantic markup for the situation should be chosen when leveraging this extension.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list"</span> <span class="na">role=</span><span class="s">"list"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item item-complex"</span> <span class="na">role=</span><span class="s">"listitem"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"item-hd"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/h2&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"item-copy"</span><span class="nt">&gt;</span>You know, where the heart is<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item item-complex"</span> <span class="na">role=</span><span class="s">"listitem"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"item-hd"</span><span class="nt">&gt;</span>Darnassea<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"item-copy"</span><span class="nt">&gt;</span>Designed on top of an ocean, the town of Darnassea is home to dark elves lead by Colonel Alduin.
+This town wasn't built by an ocean by accident, as it has ancient, lost technologies, which is of great importance to the people of Darnassea and its success.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item item-complex"</span> <span class="na">role=</span><span class="s">"listitem"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"item-hd hd-2"</span><span class="nt">&gt;</span>Complex Item Heading (hd-2)<span class="nt">&lt;/h2&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"item-copy-large"</span><span class="nt">&gt;</span>Darkwell has a troubled economy, which is mainly supported by jewelcrafting, fishing and fletching. But their biggest strengths are intricate jewelcrafting and rare herbalism. However, Darkwell lacks people skilled in farming (large copy).<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item item-complex"</span> <span class="na">role=</span><span class="s">"listitem"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"item-hd hd-5"</span><span class="nt">&gt;</span>Darkwell (hd-5)<span class="nt">&lt;/h2&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"item-copy-meta"</span><span class="nt">&gt;</span>Raised inside a geyser field, the port of Darkwell is home to vikings lead by Mrs. Chilson. This port wasn't built by a geyser field by accident, as it has rare resources, which is of great importance to the people of Darkwell and its success (meta copy).<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Grouped Lists<span class="nt">&lt;/h3&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set-description copy copy-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Grouped lists more strongly show a relationship between items. Additionally, they can be used in tandem with block-level link styling.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-grouped"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Apples<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Apricots<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://ux.edx.org"</span><span class="nt">&gt;</span>Bananas<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Blackberries<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-grouped"</span> <span class="na">role=</span><span class="s">"list"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item item-complex"</span> <span class="na">role=</span><span class="s">"listitem"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"item-hd"</span><span class="nt">&gt;</span>Darnassea<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"item-copy"</span><span class="nt">&gt;</span>Designed on top of an ocean, the town of Darnassea is home to dark elves lead by Colonel Alduin.
+This town wasn't built by an ocean by accident, as it has ancient, lost technologies, which is of great importance to the people of Darnassea and its success<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item item-complex"</span> <span class="na">role=</span><span class="s">"listitem"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"item-hd hd-2"</span><span class="nt">&gt;</span>Darkwell (hd-2)<span class="nt">&lt;/h5&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"item-copy-large"</span><span class="nt">&gt;</span>Darkwell has a troubled economy, which is mainly supported by jewelcrafting, fishing and fletching. But their biggest strengths are intricate jewelcrafting and rare herbalism. However, Darkwell lacks people skilled in farming (large copy).<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-grouped"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item has-block-link"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://ux.edx.org/"</span><span class="nt">&gt;</span>Apples (Block-level links)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item has-block-link"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://ux.edx.org/"</span><span class="nt">&gt;</span>Apricots (Block-level links)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item item-complex"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"item-hd hd-2"</span><span class="nt">&gt;</span>Darkwell (hd-2)<span class="nt">&lt;/h5&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"item-copy-large"</span><span class="nt">&gt;</span>Darkwell has a troubled economy, which is mainly supported by jewelcrafting, fishing and fletching. But their biggest strengths are intricate jewelcrafting and rare herbalism. However, Darkwell lacks people skilled in farming (large copy).<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item has-block-link"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://ux.edx.org/"</span><span class="nt">&gt;</span>Bananas (Block-level links)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+                    </div>
+                </div>
+
+                <div class="pldoc-tab pldoc-pattern-styling is-hidden" id="lists-styling" tabindex="-1">
+                    <h2 class="pldoc-heading pldoc-tab-heading pldoc-pattern-styling-title">Lists Style</h2>
+
+                    <div class="pldoc-tab-content">
+                        <p class="copy-base">View <a class="pldoc-link" href="https://github.com/edx/ux-pattern-library/blob/master/pattern-library/sass/patterns/_lists.scss">the original source of the CSS as SCSS</a> in this project's repo.</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </article>
+</section>
+
+
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <div class="pldoc-wrapper-footer-site">
+    <footer class="pldoc-footer-site">
+        <div class="pldoc-footer-site-copyright">
+            <p class="pldoc-copy copy-micro">
+                Copyright &copy; <time datetime="2016-05-05T10:29:16-04:00">2016</time> edX.
+            </p>
+            <p class="pldoc-copy copy-micro">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+            </p>
+            <p class="pldoc-copy copy-micro">
+                These works by <a xmlns:cc="http://creativecommons.org/ns#" href="http://open.edx.org" property="cc:attributionName" rel="cc:attributionURL">edX Inc.</a>
+                are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+        </div>
+    </footer>
+</div>
+
+    </div>
+
+    <script src="/public/pattern-library.js"></script>
+
+</body>
+</html>
+
