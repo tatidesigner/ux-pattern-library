@@ -34,7 +34,7 @@
     "browser-sync": "*",
     "css-loader": "~0.23.1",
     "del": "*",
-    "edx-ui-toolkit": "file:../edx-ui-toolkit",
+    "edx-ui-toolkit": "git://github.com/edx/edx-ui-toolkit#f8fbaf28739b9766f3864ccfcb036ec085efd497",
     "extract-text-webpack-plugin": "~1.0.1",
     "file-loader": "0.8.5",
     "font-awesome-loader": "0.0.1",
