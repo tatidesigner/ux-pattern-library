@@ -6,13 +6,13 @@ define([
     var Tabs = {
 
         vars: {
-            $tabContainer:   $('.pldoc-tab-wrapper'),
-            $tabs:           $('.pldoc-tab-labels'),
-            $tab:            $('.pldoc-tab-label'),
-            $panels:         $('.pldoc-tabs'),
-            $panel:          $('.pldoc-tab'),
-            activeClass:     'is-active',
-            hiddenClass:     'is-hidden'
+            $tabContainer: $('.pldoc-tab-wrapper'),
+            $tabs: $('.pldoc-tab-labels'),
+            $tab: $('.pldoc-tab-label'),
+            $panels: $('.pldoc-tabs'),
+            $panel: $('.pldoc-tab'),
+            activeClass: 'is-active',
+            hiddenClass: 'is-hidden'
         },
 
         init: function() {

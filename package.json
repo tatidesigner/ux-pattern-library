@@ -35,12 +35,15 @@
     "css-loader": "~0.23.1",
     "del": "*",
     "edx-ui-toolkit": "~0.10.0",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.8.1",
     "extract-text-webpack-plugin": "~1.0.1",
     "file-loader": "0.8.5",
     "font-awesome-loader": "0.0.1",
     "gulp": "*",
     "gulp-changed": "*",
     "gulp-concat": "*",
+    "gulp-eslint": "^2.0.0",
     "gulp-filesize": "*",
     "gulp-filter": "*",
     "gulp-gh-pages": "~0.5.4",
@@ -67,6 +70,7 @@
   "scripts": {
     "production": "gulp build-production",
     "gulp": "gulp",
+    "lint": "gulp lint",
     "development": "gulp build-development"
   }
 }

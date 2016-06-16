@@ -1,7 +1,6 @@
 define([
     'jquery'
-    ], function($) {
-
+], function($) {
     /*
      * Select menu replacement
      * Handles functionality for the replacement select menus, which
@@ -12,18 +11,16 @@ define([
      * Choosing an option in the replacement menu also updates the
      * default select menu thus maintaining accessibility.
      */
-
-
     var CustomSelectReplacement = {
 
         vars: {
-            replaced:       $('.replace-select'),
-            replacedClass:  'is-replaced is-transparent',
-            customClass:    'wrapper-custom-select',
-            wrapperClass:   'wrapper-replace-select',
-            valueClass:     'replace-value',
-            iconClass:      'icon-caret-down',
-            hoverClass:     'is-hover'
+            replaced: $('.replace-select'),
+            replacedClass: 'is-replaced is-transparent',
+            customClass: 'wrapper-custom-select',
+            wrapperClass: 'wrapper-replace-select',
+            valueClass: 'replace-value',
+            iconClass: 'icon-caret-down',
+            hoverClass: 'is-hover'
         },
 
         init: function() {
@@ -36,7 +33,6 @@ define([
             var variables = this.vars;
 
             if (variables.replaced.length) {
-
                 variables.replaced.each(function(index, el) {
                     var $el = $(el),
                         replaced = $el.clone(),
@@ -60,16 +56,21 @@ define([
 
                     $el.replaceWith([
                         '<div class="' + variables.wrapperClass + '">',
-                            '<select class="' + replaced[0].className + ' is-replaced" id="' + replaced[0].id + '" name="' + replaced[0].name + '" ' + disabled + '>' + replaced[0].innerHTML + '</select>',
-                            '<span class="' + variables.customClass + ' ' + statuses.join(' ') + '" aria-hidden="true">',
-                                '<span class="' + variables.valueClass + '">' + CustomSelectReplacement.setInitialText($el) + '</span>',
-                                '<span class="icon-fallback-glyph">',
-                                    '<span class="icon ' + variables.iconClass + '" aria-hidden="true"></span>',
-                                    '<span class="text">Down arrow</span>',
-                                '</span>',
-                            '</span>',
+                        '<select class="' + replaced[0].className + ' is-replaced" id="' + replaced[0].id +
+                        '" name="' + replaced[0].name + '" ' + disabled + '>' +
+                        replaced[0].innerHTML +
+                        '</select>',
+                        '<span class="' + variables.customClass + ' ' + statuses.join(' ') + '" aria-hidden="true">',
+                        '<span class="' + variables.valueClass + '">' +
+                            CustomSelectReplacement.setInitialText($el) +
+                        '</span>',
+                        '<span class="icon-fallback-glyph">',
+                        '<span class="icon ' + variables.iconClass + '" aria-hidden="true"></span>',
+                        '<span class="text">Down arrow</span>',
+                        '</span>',
+                        '</span>',
                         '</div>'
-                        ].join(''));
+                    ].join(''));
                 });
             }
         },

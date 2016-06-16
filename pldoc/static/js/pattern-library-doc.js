@@ -5,5 +5,7 @@ require(
         '../../_includes/examples/dropdown-menu-js.html',
         './edx-icons.js'
     ],
-    function($, Ui) {}
+    function() {
+        'use strict';
+    }
 );

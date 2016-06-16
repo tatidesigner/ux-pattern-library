@@ -1,14 +1,12 @@
 define([
     'jquery'
-    ], function($) {
-
+], function($) {
     /*
      * Icon size slider
      * Creates a slider control which lets users scale the icons to see how
      * they might look in various sizes. The size in pixels is also displayed
      * with the control.
      */
-
     var IconFontSliderControl = {
 
         vars: {
@@ -42,8 +40,8 @@ define([
         },
 
         updateIconSize: function(size) {
-            IconFontSliderControl.vars.example.css({ fontSize: size + 'px' });
-            IconFontSliderControl.vars.exampleContainer.css({ width: size + 'px' });
+            IconFontSliderControl.vars.example.css({fontSize: size + 'px'});
+            IconFontSliderControl.vars.exampleContainer.css({width: size + 'px'});
         },
 
         updateInputText: function(size) {
